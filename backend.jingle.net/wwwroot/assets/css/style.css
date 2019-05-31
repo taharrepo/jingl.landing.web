@@ -1,0 +1,442 @@
+html {
+    height: 100%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif !important;
+    height: 100%;
+}
+
+p {
+    letter-spacing: .5px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: .5px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+.navbar-jingl {
+    background: transparent !important;
+}
+
+.ul-jingl li {
+    margin: 10px;
+    font-weight: 600;
+}
+
+.ul-jingl li a {
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    color: #fc391d !important;
+    transition: all .25s ease;
+    padding: 5px;
+}
+
+.ul-jingl li a:hover {
+    border: 1px solid #fc391d;
+    color: rgba(255, 255, 255, 0.8);
+
+}
+
+.ul-jingl li a img {
+    width: 10%;
+    float: right;
+    margin-top: -5px;
+}
+
+.col-gif {
+    padding: 0;
+}
+
+.section-gif {
+    position: relative;
+    height: 100vh;
+}
+
+.overlay {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 2;
+    top: 0;
+
+    margin: auto;
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+
+.ul-gif li {
+    float: left;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.ul-gif li img {
+    height: 100vh;
+    z-index: 3;
+}
+
+.header-text {
+    display: table;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    text-align: center;
+    z-index: 4;
+    color: rgba(255, 255, 255, 0.8);
+
+}
+
+.header-text img {
+    width: 25%;
+    display: table;
+    text-align: center;
+    margin: auto;
+}
+
+.header-text h1 {
+    color: rgba(255, 255, 255, 0.8);
+    margin: 20px 5px 15px 5px;
+    text-transform: capitalize;
+    letter-spacing: .5px;
+}
+
+.header-text h3 {
+    letter-spacing: .5px;
+    margin: 0px 10px 10px;
+}
+
+.header-text h6 {
+    letter-spacing: .5px;
+    margin: 0px 10px 20px;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.header-text a {
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    padding: 12px 18px;
+    background: #fc391d;
+    border-color: #fc391d;
+    margin: 40px 0 10px;
+    border-radius: 8px;
+}
+
+.section2 {
+    padding: 50px 0 0 0;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 4;
+
+}
+
+.section2 h5 {
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.6);
+    margin: 0 auto;
+}
+
+.ul-sosmed {
+    display: table;
+    margin: auto;
+}
+
+.ul-sosmed li {
+    float: left;
+    margin: 10px 10px 50px;
+}
+
+.ul-sosmed li a .fb {
+    font-size: 30px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.ul-sosmed li a .igs {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 30px;
+}
+
+.ul-sosmed li a:hover {
+    color: rgba(252, 57, 29, 1);
+}
+
+/*about*/
+.bg-body {}
+
+.section-about {
+    padding: 50px 0;
+    position: relative;
+}
+
+
+.section-about h1 {
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #fc391d;
+}
+
+.text-about {
+    background: #fff;
+    padding: 30px;
+    margin: 0px 10px 30px 10px
+}
+
+.text-about h3 {
+    color: rgba(252, 57, 29, 0.8);
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.text-about p {
+    color: rgba(0, 0, 0, 0.8);
+    line-height: 2rem;
+}
+
+.btn-about {
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    padding: 12px 18px;
+    background: #fc391d;
+    border-color: #fc391d;
+    margin-top: 10px;
+}
+
+/*form*/
+.section-form {
+    padding: 20px 0;
+    position: relative;
+}
+
+.section-form h1 {
+    padding: 30px 0 10px;
+    color: #fc391d;
+}
+
+.section-form h5 {
+    margin-bottom: 50px;
+}
+
+.con-form {
+    height: 100%;
+}
+
+.col-form {
+    padding: 35px 75px 65px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+}
+
+.col-form button {
+    padding: 8px 25px;
+}
+
+.col-form-upload {
+    padding: 35px 35px;
+}
+
+.col-form-upload
+}
+
+.col-row {
+    height: 100%;
+}
+
+.box-form {
+    padding: 10px 15px;
+}
+
+.box-form h1 {
+    background: #0957C3;
+    color: #fff;
+    display: table;
+    padding: 4px 23px 14px;
+    border-radius: 50%;
+    text-align: center;
+    margin: auto;
+}
+
+.box-form p {
+    margin-top: 10px;
+}
+
+/*video*/
+
+.section-video {
+    padding: 60px 0;
+    position: relative;
+}
+
+.section-video h1 {
+    color: #fc391d;
+}
+
+.bg {
+    position: absolute;
+    top: -50px;
+    padding: 0;
+}
+
+.bg img {
+    padding: 0;
+}
+
+.bg2 {
+    width: ;
+    position: absolute;
+    bottom: 100px;
+    ;
+    padding: 0;
+}
+
+.bg2 img {
+    padding: 0;
+}
+
+.section-video h1 {
+    padding-bottom: 30px;
+}
+
+.video {
+    padding: 20px 30px;
+}
+
+.video-text {
+    padding: 20px 15px;
+    text-align: center;
+}
+
+.section-pem {
+    height: 100%;
+}
+
+.section-pem .container {
+    height: 100%;
+}
+
+.section-pem .row {
+    height: 100%;
+}
+
+.section-pem h4 {
+    color: rgba(0, 0, 0, 0.6);
+    letter-spacing: .5px;
+    line-height: 2.5rem;
+    text-align: left;
+}
+
+.section-pem h4 span {
+    color: #fc391d;
+}
+
+.section-pem .atau {
+    margin: 5px 10px;
+}
+
+.section-pem .btnupload {
+    background: #fc391d;
+    border-color: #fc391d;
+}
+
+.col-form .upload {
+    padding: 10px;
+    background: #f0f0;
+}
+
+.login {
+    padding: 60px 40px 90px;
+}
+
+@media screen and (max-width: 370px) {
+    .header-text img {
+        width: 70%;
+    }
+
+    .header-text h1 {
+        font-size: 2rem;
+    }
+
+    .header-text h3 {
+        font-size: 1.2rem !important;
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+    .col-hide {
+        display: none;
+    }
+
+    .header-text img {
+        width: 90%;
+    }
+
+    .header-text a {
+        margin-top: 5px;
+    }
+
+    .header-text h3 {
+        font-size: 1.55rem;
+    }
+
+    .bg {
+        position: absolute;
+        top: -10px;
+        padding: 0;
+    }
+
+    .bg img {
+        padding: 0;
+    }
+
+    .ul-jingl .nav-link {
+        padding: 0 !important;
+    }
+
+    .ul-sosmed li {
+        float: left;
+        margin: 10px 10px 10px;
+    }
+
+    .navbar-jingl {
+        background: rgb(255, 255, 255) !important;
+    }
+
+}
+
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 1024px) {
+    .bg {
+        position: absolute;
+        top: -10px;
+        padding: 0;
+    }
+
+    .bg img {
+        padding: 0;
+    }
+}

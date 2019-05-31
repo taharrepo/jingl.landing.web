@@ -1,0 +1,23 @@
+﻿
+@{
+    ViewData["Title"] = "Registration Succes";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<section class="section-pem">
+    <div class="bg container-fluid">
+        <img src="~/assets/img/bg2.jpg" alt="" class="col-md-12">
+    </div>
+    <div class="container">
+        <div class="row align-items-center justify-content-center">
+            <div class="col-md-10 align-self-center text-center">
+                <h4>Terimakasih sudah mendaftar di audisi <span>JinglStar</span> 2019. Cek email kamu untuk langkah selanjutnya. </h4>
+                <a asp-area="" asp-controller="Home" asp-action="Index" class="btn btn-primary text-center col-sm-12 col-md-3">Back to home</a>
+                <span class="col-sm-12 col-md-2 atau">atau</span>
+                <form asp-controller="Home" asp-action="RegistrationSuccess" method="post">
+                    <button type="submit" class="btn btn-primary text-center col-sm-12 btnupload col-md-3">Upload video sekarang</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+

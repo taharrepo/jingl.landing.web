@@ -1,0 +1,25 @@
+﻿@model Jingl.Web.Models.ContactMessage
+@inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor
+@*
+    For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
+*@
+
+<div class="grid-12 grid-mobile-12 grid-tablet-12 col-cf">
+
+    <h3 class="heading-2">Contact Form</h3>
+
+    <form asp-action="_Contact" method="post" class="contact-form">
+        <input type="text" name="Name" value="" id="contact-name" class="half" placeholder="Full Name" required>
+        <input type="email" name="EmailUser" value="" id="contact-email" class="half last" placeholder="Email Address" required>
+        <textarea name="Message" id="contact-message" cols="88" rows="6" placeholder="Message" required></textarea>
+        <div class="hidden">
+            <label for="contact-spam-check">Do not fill out this field:</label>
+            <input name="spam-check" type="text" value="" id="contact-spam-check" />
+            <input type="text" class="form-control" asp-for="IPAddress" value="@HttpContextAccessor.HttpContext.Connection.RemoteIpAddress.ToString()">
+        </div>
+
+        <input type="submit" class="button" value="Send Email">
+        <br />
+        <span><b>@ViewBag.Message</b></span>
+    </form>
+</div>

@@ -1,0 +1,55 @@
+﻿@model backend.jingle.net.Models.AdminAuth
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>AdminAuth</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.AdminEmail)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.AdminEmail)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.AdminPassword)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.AdminPassword)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.CreatedDate)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.CreatedDate)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.LastLogin)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.LastLogin)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.IPAddress)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.IPAddress)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.UserAgent)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.UserAgent)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

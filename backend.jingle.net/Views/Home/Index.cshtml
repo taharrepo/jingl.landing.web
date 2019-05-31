@@ -1,0 +1,98 @@
+﻿@{
+    ViewData["Title"] = "Home";
+}
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top navbar-jingl">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto justify-content-end ul-jingl">
+                        <li class="nav-item active">
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="About">Tentang Jingl</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Video">Video</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Contact">Kontak</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Login">Login</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </nav>
+            <!--
+            <ul class="nav justify-content-end ul-jingl">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><img src="assets/img/Logo%20Jingl-01.png" alt=""></a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">Tentang Jingl</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="video.html">Video</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="kontak.html">Kontak</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="kontak.html">Login</a>
+                </li>
+            </ul>
+            -->
+        </div>
+        <div class="col-md-12 col-gif">
+            <div class="section-gif">
+                <div class="overlay"></div>
+                <ul class="ul-gif">
+                    <li class="col-md-6 col-hide ">
+                        <img src="~/assets/img/20190212_153115.gif" alt="" class="w-100 img-fluid">
+                    </li>
+                    <li class="col-md-6 col-xs-12 col-sm-12">
+                        <img src="~/assets/img/20190212_115306%20(1).gif" alt="" class="w-100 img-fluid">
+                    </li>
+
+                </ul>
+                <div class="header-text">
+                    <img src="~/assets/img/Logo%20Jingl-01.png" class="img-fluid" alt="">
+                    <h1>Yuk jadi talent Jingl</h1>
+                    <h3>Dapatkan Rp. 50.000 untuk 100 pendaftar pertama yang meng-upload video</h3>
+
+                    <a class="btn btn-primary btn-lg" asp-area="" asp-controller="Home" asp-action="Registration">Daftar Sekarang !</a>
+
+                </div>
+                <div class="section2">
+                    <h5>Follow us on</h5>
+                    <ul class="ul-sosmed clearfix">
+                        <li>
+                            <a href="https://www.facebook.com/Jingl-2053654128052885/" target="_blank">
+                                <i class="fab fa-facebook-square fb"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/jingl_id/" target="_blank">
+                                <i class="fab fa-instagram igs"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--
+    <div class="row">
+        <div class="col-md-12">
+
+        </div>
+    </div>
+    -->
+</div>

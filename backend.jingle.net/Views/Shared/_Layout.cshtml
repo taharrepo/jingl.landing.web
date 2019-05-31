@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/javascript">
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-134534279-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="Video, bus telolet, vidio, videoder, kata kata lucu, berita terbaru, berita, video com, artis cantik, gosip artis terbaru, foto artis, Valentine, artis, kata kata bahasa inggris dan artinya, gosip terbaru, gosip artis, berita selebriti, jomblo" />
+    <meta name="description" content="Upload foto dibayar mau? langsung klik di sini"/>
+    <title>Jingl! - @ViewData["Title"]</title>
+
+    <environment include="Development">
+        @*<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+            <link rel="stylesheet" href="~/css/site.css" />*@
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+        <link rel="stylesheet" href="~/assets/css/style.css">
+    </environment>
+    <environment exclude="Development">
+        @*<link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/css/bootstrap.min.css"
+                  asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
+                  asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
+            <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />*@
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+        <link rel="stylesheet" href="~/assets/css/style.css">
+    </environment>
+</head>
+<body>
+    @*<nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">backend.jingle.net</a>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
+                        <li><a asp-area="" asp-controller="Home" asp-action="About">About</a></li>
+                        <li><a asp-area="" asp-controller="Home" asp-action="Contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>*@
+
+    @*<partial name="_CookieConsentPartial" />*@
+    @RenderBody()
+    @*<div>
+
+        <hr />
+        <footer>
+            <p>&copy; 2019 - Jingl!</p>
+        </footer>
+    </div>*@
+
+    <environment include="Development">
+        @*<script src="~/lib/jquery/dist/jquery.js"></script>
+        <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>*@
+        <script src="~/js/site.js" asp-append-version="true"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    </environment>
+    <environment exclude="Development">
+        @*<script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-3.3.1.min.js"
+                asp-fallback-src="~/lib/jquery/dist/jquery.min.js"
+                asp-fallback-test="window.jQuery"
+                crossorigin="anonymous"
+                integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT">
+        </script>
+        <script src="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/bootstrap.min.js"
+                asp-fallback-src="~/lib/bootstrap/dist/js/bootstrap.min.js"
+                asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal"
+                crossorigin="anonymous"
+                integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa">
+        </script>
+        <script src="~/js/site.min.js" asp-append-version="true"></script>*@
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    </environment>
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

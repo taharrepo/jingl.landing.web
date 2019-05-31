@@ -1,0 +1,60 @@
+﻿@model backend.jingle.net.Models.AdminAuth
+@inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Edit</h2>
+
+<h4>AdminAuth</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <label asp-for="AdminEmail" class="control-label"></label>
+                <input asp-for="AdminEmail" class="form-control" />
+                <span asp-validation-for="AdminEmail" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AdminPassword" class="control-label"></label>
+                <input asp-for="AdminPassword" class="form-control" type="password" />
+                <span asp-validation-for="AdminPassword" class="text-danger"></span>
+            </div>
+            @*<div class="form-group">
+            <label asp-for="CreatedDate" class="control-label"></label>
+            <input asp-for="CreatedDate" class="form-control" />
+            <span asp-validation-for="CreatedDate" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="LastLogin" class="control-label"></label>
+            <input asp-for="LastLogin" class="form-control" />
+            <span asp-validation-for="LastLogin" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="IPAddress" class="control-label"></label>
+            <input asp-for="IPAddress" class="form-control" />
+            <span asp-validation-for="IPAddress" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="UserAgent" class="control-label"></label>
+            <input asp-for="UserAgent" class="form-control" />
+            <span asp-validation-for="UserAgent" class="text-danger"></span>
+        </div>*@
+            <div style="display:none">
+                <input type="text" class="form-control" asp-for="IPAddress" value="@HttpContextAccessor.HttpContext.Connection.RemoteIpAddress.ToString()">
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+

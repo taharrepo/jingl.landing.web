@@ -1,0 +1,38 @@
+﻿@model IEnumerable<admin.jingl.net.Models.AdminRemarks>
+
+<br />
+Remark History
+<div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                   Remark Date
+                </th>
+                <th>
+                   Admin Email
+                </th>
+                <th>
+                   Remark
+                </th>
+
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.UpdatedDate)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.UpdatedEmail)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Remarks)
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

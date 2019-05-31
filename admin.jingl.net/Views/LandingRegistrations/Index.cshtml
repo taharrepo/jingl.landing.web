@@ -1,0 +1,153 @@
+﻿@model IEnumerable<admin.jingl.net.Models.LandingRegistration>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Index</h1>
+
+<p>
+    @*<a asp-action="Create">Create New</a>*@
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Actions</th>
+            <th>
+                Name
+            </th>
+            <th>
+                Email
+            </th>
+            <th>
+                Social Media
+            </th>
+            <th>
+                Agreed Video?
+                @*@Html.DisplayNameFor(model => model.VideoYes)*@
+            </th>
+            <th>
+                Video Status
+            </th>
+            @*<th>
+            @Html.DisplayNameFor(model => model.SessionId)
+        </th>*@
+            <th>
+                Registration Date
+            </th>
+            @*<th>
+            @Html.DisplayNameFor(model => model.RegisteredIp)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.RegisteredUserAgent)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.UniqueKey)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.UniqueKeyConfirm)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.InstagramUrl)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FacebookUrl)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TwitterUrl)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.GoogleUrl)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LinkedInUrl)
+        </th>*@
+
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @*<a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |*@
+                <a asp-action="Details" asp-route-id="@item.Id">Details</a>
+
+                @*|
+            <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>*@
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Email)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SocialMedia)
+            </td>
+            <td>
+                @if (item.VideoYes.HasValue)
+                {
+                    @if (item.VideoYes.Value)
+                    {
+                        <p>Yes</p>
+                    }
+                    else
+                    {
+                        <p>No</p>
+                    }
+                }
+                else
+                {
+                    <p>No</p>
+                }
+
+            </td>
+            <td>
+                @if (item.FileUrl == null)
+                {
+                    <p>No Video Uploaded</p>
+                }
+                else
+                {
+                    <p>Video Uploaded</p>
+                }
+            </td>
+            @*<td>
+            @Html.DisplayFor(modelItem => item.SessionId)
+        </td>*@
+            <td>
+                @Html.DisplayFor(modelItem => item.RegistrationDate)
+            </td>
+            @*<td>
+            @Html.DisplayFor(modelItem => item.RegisteredIp)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.RegisteredUserAgent)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.UniqueKey)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.UniqueKeyConfirm)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.InstagramUrl)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FacebookUrl)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TwitterUrl)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.GoogleUrl)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LinkedInUrl)
+        </td>*@
+
+        </tr>
+}
+    </tbody>
+</table>

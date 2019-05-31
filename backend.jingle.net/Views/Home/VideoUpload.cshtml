@@ -1,0 +1,71 @@
+﻿@model backend.jingle.net.Models.LandingRegistration
+
+@{
+    ViewData["Title"] = "Video Upload";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<section class="section-form">
+    <div class="bg container-fluid">
+        <img src="~/assets/img/bg2.jpg" alt="" class="col-md-12">
+    </div>
+    <div class="container ">
+        <div class="row align-items-center justify-content-center ">
+            <div class="col-md-12">
+                <h1 class="text-center">Be our JinglStar</h1>
+                <h5 class="text-center">Dapatkan Rp 50.000 untuk 100 Pendaftar Pertama yang Memenuhi Syarat di Bawah Ini. <br /> Temukan inspirasi videonya di <a asp-area="" asp-controller="Home" asp-action="Video">sini.</a></h5>
+            </div>
+
+            <div class="col-md-6 align-self-center">
+                @if (Model.FileUrl.Length > 1)
+                {
+                    <div>Kamu sudah pernah upload video dan ini video Kamu</div>
+                    <video width="400" controls>
+                        <source src=@Html.DisplayFor(model => model.FileUrl) type="video/mp4">
+                        <source src=@Html.DisplayFor(model => model.FileUrl) type="video/ogg">
+                        Your browser does not support HTML5 video.
+                    </video>
+
+                }
+                else
+                {
+                    <form class="shadow-lg col-form-upload" asp-controller="Home" asp-action="VideoUpload" method="post" enctype="multipart/form-data">
+                        <div class="form-row align-items-center">
+                            <div class="col-auto my-1">
+                                <label for="exampleFormControlFile1">Upload Video Kamu Di Sini</label>
+                                <input type="file" class="form-control-file" name="file">
+                            </div>
+                            <div class="col-auto my-1">
+                                <input type="submit" class="btn btn-primary float-right" value="Upload" />
+                            </div>
+                            <div style="display:none">
+                                <input type="text" name="id" value="@ViewBag.Id" />
+                            </div>
+                        </div>
+                    </form>
+                }
+
+            </div>
+            <div class="col-md-6">
+                <div class="box-form">
+                    <h1>1</h1>
+                    <p>Bikin videonya jangan panjang-panjang ya, cukup 15-20 detik aja. Contoh ucapannya bisa berupa : Selamat Ulang Tahun, Ucapan Valentine, Ucapan Kelulusan dan apapun kreasi kamu. Kalau kamu perlu inspirasi video, bisa klik di <a asp-area="" asp-controller="Home" asp-action="Video">sini.</a></p>
+                </div>
+                <div class="box-form">
+                    <h1>2</h1>
+                    <p>Perhatikan juga kualitas video, jangan blur maupun gelap. Selain itu, suara juga harus clear ya, jangan banyak noise atau ucapan yang susah didengar.Oh ya, videonya berbentuk vertikal ya.</p>
+                </div>
+                <div class="box-form">
+                    <h1>3</h1>
+                    <p>Size maksimum untuk pengiriman video ini adalah 6 MB. Usahakan jangan lebih dari itu ya.</p>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+

@@ -1,0 +1,92 @@
+﻿@model Jingl.Web.Models.LandingRegistration
+@{
+    ViewData["Title"] = "VideoUpload";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!-- ======== Resopnsive Navigation ======== -->
+<div class="responsive-block">
+    <div class="responsive-block-content">
+        <a href="#" class="responsive-block-close"></a>
+        <nav id="responsive-nav">
+            <!-- Responsive nav here -->
+        </nav>
+        <div id="responsive-social">
+            <!-- Responsive Social Icons from header -->
+        </div>
+    </div>
+</div>
+<div class="responsive-block-layer"></div>
+
+
+<!-- ======== Site ======== -->
+<div class="site">
+
+    <!-- ======== contact ======== -->
+    <div id="contact" class="section">
+
+        <!-- == section container == -->
+        <div class="container section-content clearfix">
+
+            <!-- == content header == -->
+            <header class="content-header">
+                <h1 class="content-title">Upload</h1>
+                <span class="back-layer barlow" data-parallax='{"y": -40}'>Upload</span>
+            </header>
+            <!-- /content header -->
+            <!-- Grid 2 columns -->
+            <div class="grid-row grid-row-pad-large row-jingl">
+
+                <!-- Col 1 -->
+                <div class="grid-6 grid-mobile-12 grid-tablet-12 col-cf grid-jingl">
+
+                    <h3 class="heading-2">Upload Form</h3>
+                    @if (Model.FileUrl.Length > 1)
+                    {
+                        <div>Kamu sudah pernah upload video dan ini video Kamu</div>
+                        <video width="400" controls>
+                            <source src=@Html.DisplayFor(model => model.FileUrl) type="video/mp4">
+                            <source src=@Html.DisplayFor(model => model.FileUrl) type="video/ogg">
+                            Your browser does not support HTML5 video.
+                        </video>
+
+                    }
+                    else
+                    {         
+                        <form method="post" class="contact-form" asp-controller="Home" asp-action="VideoUpload" enctype="multipart/form-data">
+
+                            <input type="file" class="form-control-file" name="file">
+                            <div style="display:none">
+                                <input type="text" name="id" value="@ViewBag.Id" />
+                            </div>
+                            <input type="submit" class="button" value="Upload">
+                            <br />
+                        </form>
+                    }
+
+
+                </div>
+                <div class="grid-6 grid-mobile-12 grid-tablet-12 col-cf">
+                    <h3 class="heading-2">1</h3>
+                    <p>Bikin videonya jangan panjang-panjang ya, cukup 15-20 detik aja. Contoh ucapannya bisa berupa : Selamat Ulang Tahun, Ucapan Valentine, Ucapan Kelulusan dan apapun kreasi kamu. Kalau kamu perlu inspirasi video, bisa klik di sini.</p>
+                    <h3 class="heading-2">2</h3>
+                    <p>Perhatikan juga kualitas video, jangan blur maupun gelap. Selain itu, suara juga harus clear ya, jangan banyak noise atau ucapan yang susah didengar.Oh ya, videonya berbentuk vertikal ya.</p>
+                    <h3 class="heading-2">3</h3>
+                    <p>Size maksimum untuk pengiriman video ini adalah 6 MB. Usahakan jangan lebih dari itu ya.</p>
+                </div>
+
+
+            </div>
+
+        </div>
+        <!-- /section container -->
+
+    </div>
+    <!-- /contact -->
+
+
+
+
+
+</div>
+<!-- /site -->
