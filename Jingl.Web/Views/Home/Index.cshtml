@@ -7,7 +7,7 @@
 <div id="loading-layer" class="loading-layer show-layer">
     <div class="ajax-loader">
         <div class="show-fx trans-10 delay-02">
-            <div class="loader-img skew-fx-loop"><img src="images/LogoJinglpre.png" height="308" width="308" alt="Logo"></div>
+            <div class="loader-img skew-fx-loop"><img src="images/Jing_pre.png" alt="Logo"></div>
         </div>
         <div class="show-fx trans-10 delay-03">
             <div class="loader-bar">
@@ -72,9 +72,9 @@
         <div class="nav-container">
 
             <!-- ======== Logo ======== -->
-            <a href="index.html" id="logo" class="smooth-scroll skew-fx">
-                <img src="~/images/LogoJingl.png" width="137" height="137" alt="Logo" class="logo-light">
-                <img src="~/images/LogoJingl.png" width="137" height="137" alt="Logo" class="logo-dark">
+            <a href="#intro" id="logo" class="smooth-scroll skew-fx">
+                <img src="~/images/Jing_e%201.png" alt="Logo" class="logo-light">
+                <img src="~/images/Jing_e%201.png" alt="Logo" class="logo-dark">
             </a>
             <!-- /logo -->
             <!-- ======== Icon navigation ======== -->
@@ -89,14 +89,13 @@
                         </a>
                     </li>
 
-                    <li class="search-trigger-wrap">
-                        <a href="#" id="nav-search" class="circle-btn">
+                    <!-- <li class="search-trigger-wrap"><a href="#" id="nav-search" class="circle-btn">
                             <svg class="circle-svg" width="40" height="40" viewBox="0 0 50 50">
                                 <circle class="circle" cx="25" cy="25" r="23" stroke="#fff" stroke-width="1" fill="none"></circle>
                             </svg>
                             <span class="pe-7s-search"></span>
                         </a>
-                    </li>
+                    </li> -->
                     <li class="social-trigger-wrap">
                         <a href="#" id="nav-social" class="circle-btn">
                             <svg class="circle-svg" width="40" height="40" viewBox="0 0 50 50">
@@ -112,20 +111,17 @@
             <nav id="nav">
                 <ul>
                     <li class="text-fx-btn rotate-x-360">
-                        <a href="#bio" class="trans-10 text-fx-btn-x">Bikin Video Seperti Apa?</a>
+                        <a href="#bio" class="trans-10 text-fx-btn-x">About Us</a>
                     </li>
                     <li class="text-fx-btn rotate-x-360">
-                        <a href="#music" class="trans-10 text-fx-btn-x">Inspirasi Video</a>
+                        <a href="#music" class="trans-10 text-fx-btn-x">Video Terbaik</a>
                     </li>
                     <li class="text-fx-btn rotate-x-360">
-                        <a href="#contact" class="trans-10 text-fx-btn-x">Contact</a>
+                        <a href="#newsletter" class="trans-10 text-fx-btn-x">Cara Order</a>
                     </li>
+
                     <li class="text-fx-btn rotate-x-360">
-                        <a asp-action="Login" class="trans-10 text-fx-btn-x">Login</a>
-                    </li>
-                    <li class="text-fx-btn rotate-x-360">
-                       
-                        <a href="@(Html.Raw(Url.Action("Registration", "Home") + Context.Request.QueryString))" class="trans-10 text-fx-btn-x">Daftar</a>
+                        <a href="https://jingl.azurewebsites.net/Account/Signup" class="trans-10 text-fx-btn-x">Daftar</a>
                     </li>
 
                 </ul>
@@ -145,23 +141,27 @@
     <div id="intro" class="intro intro-01 intro-fullscreen clearfix">
 
         <!-- Image -->
-        <div class="intro-image parallax blur-fx trans-20"><img class="hidden" src="~/images/giff.gif" alt="Intro-image"></div>
+        <div class="intro-image parallax blur-fx trans-20"><img class="hidden" src="images/giff.gif" alt="Intro-image"></div>
 
 
         <!-- Text slider -->
         <div class="text-slider" data-delay="5">
             <div class="text-slide visible">
                 <h2 class="text-fx jingl">JINGL</h2>
-                <h6 class="text-fx-word">Yuk Jadi Talent Jingl & Let's Get Famous</h6>
+                <h6 class="text-fx-word">Dapetin Video Langsung dari idola kini makin MUDAH</h6>
             </div>
             <div class="text-slide">
                 <h2 class="text-fx jingl">JINGL</h2>
                 <h6 class="text-fx-word"> Kamu Bisa Dapat Rp. 100.000 Kalau Daftar dan Upload Video Sekarang</h6>
             </div>
         </div>
-        <div class="grid-12 grid-tablet-12 grid-mobile-12 text-center btn-header">
-            <a href="@(Html.Raw(Url.Action("Registration", "Home") + Context.Request.QueryString))" class="button">Daftar Disini</a>
-            <a href="https://wa.me/628196077558" class="button btn-wa" value="Send Email">Daftar Via Whatsapp</a>
+        <div class="grid-6 grid-tablet-12 grid-mobile-12 text-center btn-header">
+            <div>
+                <a href="#" class="trans-10 text-fx-btn-x">
+                    <img class="trans-20" src="images/badge-google_play.png" style="width: 40%">
+                </a>
+            </div>
+
         </div>
 
 
@@ -176,35 +176,42 @@
         <div class="container small section-content bio-text-block">
             <!-- == content header == -->
             <header class="content-header">
-                <h2 class="content-title">Langkah Untuk Siapkan Video WOW mu!</h2>
-                <span class="back-layer barlow" data-parallax='{"y": -40}'>Video WOW</span>
+                <h2 class="content-title">About us</h2>
+                <span class="back-layer barlow" data-parallax='{"y": -40}'>about us</span>
             </header>
 
+            <p>Punya teman yang terobsesi dengan selebriti dan orang terkenal lainnya? Nah saatnya kamu kasih hadiah paling berkesan buat dia! Jingl punya opsi Jingl punya opsi untuk kamu : personalized video messages yang langsung direkam sama selebriti favorit kamu. Misi kami adalah untuk menciptakan pengalaman otentik dan memorable langsung dari talent.</p>
 
 
+            <blockquote class="block-jingl">
+                What Is JINGL?
+            </blockquote>
+
+            <p>Jingl adalah platform dimana kamu bisa memesan video personal langsung ke selebriti atau talent favorit lainnya.Kamu bisa memesan video untuk kamu sendiri atau teman dan keluarga yang sedang merayakan ulang tahun, kelulusan, pertunangan, pernikahan, dll. Selama request yang diminta masih nggak melanggar norma kesopanan.</p>
 
             <ul class="ul-jingl">
-                <li>1. Tampil Seru Tanpa Malu-Malu. Bayangkan videomu bisa membuat orang lain lebih bahagia. Pssst… No Porn , No SARA yah.</li>
-                <li>2. Pilih Tema. Bisa ucapan ulang tahun, kelulusan, lamaran, liburan, atau apapun yang membutuhkan ucapan selamat. Sudah terpikir? Yuk segera ambil smartphone kamu.</li>
-                <li> 3. Jaga Kualitas Video. Pastikan gambarnya jelas, dan tidak blur dengan orientasi vertikal. Panjang video antara 15-20 detik, dan perhatikan size-nya jangan lebih dari 6 MB yah.</li>
-                <li>4. Sudah kece videonya? Yuk segera Upload di <a asp-action="Login">sini.</a></li>
+                <li>Saatnya Berbagi Momen Bersama</li>
+                <li>Untuk Fans : Kamu bisa pesan video sapaan dari selebriti atau talent favorit kamu dengan sangat mudah.</li>
+                <li>Untuk Talent : Kamu bisa dapat banyak fans baru dan mendapatkan tambahan uang lebih. Yay!</li>
+                <li>Untuk Fans dan Talent : Kalian bisa terkoneksi dan berbagi momen yang otentik dan memorable.</li>
+                <li>Ingin berbagi momen dengan yang lain? Bisa banget! Kamu bisa download videonya dan sebarkan lewat akun sosmed kamu.</li>
             </ul>
 
 
 
 
 
-            <blockquote class="block-jingl">
-                Dapatkan Rp. 100.000 untuk 100 pendaftar pertama yang meng-upload video
-            </blockquote>
 
             <p> Cus langsung scroll ke bawah untuk melihat beberapa contoh video dari Jingl Talent! </p>
 
 
 
             <div class="grid-12 grid-tablet-12 grid-mobile-12 text-center">
-                <a asp-action="Registration" class="button" value="Send Email">Daftar Disini</a>
-                <a href="https://wa.me/628196077558" class="button btn-wa" value="Send Email">Daftar Via Whatsapp</a>
+                <div>
+                    <a href="#">
+                        <img src="images/badge-google_play.png" style="width: 20%">
+                    </a>
+                </div>
             </div>
 
         </div>
@@ -218,13 +225,13 @@
         <div class="container music-header section-content full-width">
             <!-- == content header == -->
             <header class="content-header">
-                <h2 class="content-title">Mau Dapat Inspirasi Video? Cek Di Sini!</h2>
-                <span class="back-layer barlow" data-parallax='{"y": 20}'>Inspirasi Video</span>
+                <h2 class="content-title">Video</h2>
+                <span class="back-layer barlow" data-parallax='{"y": -40}'>video terbaik</span>
             </header>
 
         </div>
 
-        <div class="grid-row grid-row-pad-large">
+        <div class="grid-row grid-row-pad-large" videobest>
             <div class="grid-3 grid-tablet-12 grid-mobile-12">
 
                 <p>
@@ -264,8 +271,8 @@
                         </div>
                     </a>
                 </p>
-                <h4 class="text-center h4-jingl">Santi Waine, Model</h4>
-                <p class="text-center">Romantisnya ucapan ulang tahun ala Waine.</p>
+                <h4 class="text-center h4-jingl">Senk Lotta, Model</h4>
+                <p class="text-center">Ucapan 'graduation' termanis</p>
             </div>
             <div class="grid-3 grid-tablet-12 grid-mobile-12">
                 <p>
@@ -289,10 +296,10 @@
             </div>
             <div class="grid-3 grid-tablet-12 grid-mobile-12">
                 <p>
-                    <a href="video/video4.mp4" class="thumb-fade thumb mediabox" title="Image Title">
+                    <a href="video/video5.mp4" class="thumb-fade thumb mediabox" title="Image Title">
                         <!-- Image -->
                         <div class="box-image">
-                            <img src="images/place.jpeg" alt="release cover">
+                            <img src="images/place5.jpg" alt="release cover">
 
                             <!-- Icon -->
                             <span class="thumb-icon trans-40">
@@ -304,33 +311,32 @@
                         </div>
                     </a>
                 </p>
-                <h4 class="text-center h4-jingl">Senk Lotta, Model</h4>
-                <p class="text-center">Ucapan 'graduation' termanis</p>
-             
+                <h4 class="text-center h4-jingl">Ririn, JinglStar</h4>
+                <p class="text-center">Romantisnya ucapan ulang tahun ala Waine.</p>
             </div>
-            <!--
+
             <div class="grid-12 grid-tablet-12 grid-mobile-12 text-center">
-                <a href="#" class="button" value="Send Email">More Video</a>
+                <a href="video.html" class="button" value="More Video">More Video</a>
             </div>
-            -->
+
 
         </div>
 
     </div>
     <!-- /music -->
     <!-- ======== Newsletter ======== -->
-    <div id="newsletter" class="newsjingl">
+    <div id="newsletter" class="newsjingl section">
         <div class="overlay dots"></div> <!-- overlay layer -->
         <!-- == section container == -->
         <div class="container section-content dark-bg clearfix">
 
             <!-- == content header == -->
             <header class="content-header">
-                <h1 class="content-title">Kalau Jadi Talent, What's Next?</h1>
-                <span class="back-layer barlow" data-parallax='{"y": -40}'>What's Next</span>
+                <h1 class="content-title">Gimana cara pesannya</h1>
+                <span class="back-layer barlow" data-parallax='{"y": -40}'>how to order</span>
             </header>
             <!-- /content header -->
-            <p class="p-next">Kalau kamu terpilih menjadi Jingl Talent, so video kamu bisa muncul di web Jingl, mendapat uang tambahan jika ada yang memesan videomu, tambah fans, serta akan mendapat komisi pemesanan dengan memberikan kode referalmu untuk teman yang mendaftar dan terpilih.</p>
+            <p class="p-next">Super duper easy. Pertama, pilih talent yang kamu mau. Kedua, isi form berisi data kamu dan pesan yang ingin disampaikan oleh talent. Ketiga, selesaikan transaksi kamu Keempat, silakan duduk, ngopi sambil browsing-browsing manis dan tunggu 3-4 hari video kamu akan dikirim langsung ke apps/email.</p>
 
             <!--
                             <ul class="ul-jingl jingl-next">
@@ -342,6 +348,12 @@
             -->
             <h3>Seru kan? Yuk Daftarin Dirimu Sekarang Juga!</h3>
 
+            <div class="grid-12 grid-tablet-12 grid-mobile-12 text-center">
+                <div>
+                    <a href="#" class="button" value="More Video">Daftar</a>
+                </div>
+            </div>
+
         </div>
         <!-- /container -->
     </div>
@@ -352,57 +364,79 @@
 
 
         <!-- == section container == -->
-        <div class="container section-content clearfix">
+        <!--  <div class="container section-content clearfix">
 
-            <!-- == content header == -->
+
             <header class="content-header">
                 <h1 class="content-title">Contact</h1>
                 <span class="back-layer barlow" data-parallax='{"y": -40}'>Contact</span>
             </header>
-            <!-- /content header -->
-            <!-- Grid 2 columns -->
+
             <div class="grid-row grid-row-pad-large">
 
-                <!-- Col 1 -->
 
-                @{
-                    Html.RenderPartial("_Contact");
-                }
+                <div class="grid-12 grid-mobile-12 grid-tablet-12 col-cf">
 
-                <!-- Col 2 -->
-                <!--
-    <div class="grid-6 grid-mobile-12 grid-tablet-12 col-contact-details">
-        <p>
-            <span class="contact-info">Manager</span>
-            <a href="tel:+48221321321" class="barlow contact-link">+48 221-321-321</a>
-            <a href="mailto:yourmailhere" class="barlow contact-link contact-email">manager@meloo.com</a>
-        </p>
-        <p>
-            <span class="contact-info">Booking</span>
-            <a href="tel:+48221321321" class="barlow contact-link">+48 411-721-791</a>
-            <a href="mailto:yourmailhere" class="barlow contact-link contact-email">booking@meloo.com</a>
-        </p>
-        <p>
-            <span class="contact-info">Preorder</span>
-            <a href="tel:+48221321321" class="barlow contact-link">+48 875-121-131</a>
-            <a href="mailto:yourmailhere" class="barlow contact-link contact-email">preorder@meloo.com</a>
-        </p>
-    </div>
-    -->
+                    <h3 class="heading-2">Contact Form</h3>
+
+                    <form action="#" method="" class="contact-form">
+                        <input type="text" name="name" value="" id="contact-name" class="half" placeholder="Full Name" required>
+                        <input type="email" name="email" value="" id="contact-email" class="half last" placeholder="Email Address" required>
+                        <input type="text" name="subject" value="" id="contact-subject" placeholder="Message Subject">
+                        <textarea name="message" id="contact-message" cols="88" rows="6" placeholder="Message" required></textarea>
+                        <div class="hidden">
+                            <label for="contact-spam-check">Do not fill out this field:</label>
+                            <input name="spam-check" type="text" value="" id="contact-spam-check" />
+                        </div>
+
+                        <input type="submit" class="button" value="Send Email">
+                    </form>
+                </div>
+
+
 
             </div>
 
-        </div>
-        <!-- /section container -->
+        </div> -->
+
 
     </div>
     <!-- /contact -->
+    <!-- ======== bio ======== -->
+    <div id="Gabung" class="section">
+
+        <!-- container -->
+        <div class="container small section-content bio-text-block">
+            <!-- == content header == -->
+            <header class="content-header">
+                <h2 class="content-title">Gabung jadi Talent</h2>
+                <span class="back-layer barlow" data-parallax='{"y": -40}'>Bergabung</span>
+            </header>
+
+            <p>
+                Tertarik jadi Talent? Nah, kalau kamu pengen ikutan Jingl Talent, mendapat banyak fans baru dan penghasilan tambahan, cus klik Gabung!
+            </p>
+
+            <div class="grid-12 grid-tablet-12 grid-mobile-12 text-center">
+                <div>
+                    <a href="#" class="button" value="More Video">Gabung</a>
+                </div>
+            </div>
+
+        </div>
+        <!-- /container -->
+
+    </div>
+
+
+
+
     <!-- ======== footer ======== -->
     <footer id="footer">
         <!-- container -->
         <div class="container">
             <div id="copyrights">
-                &copy; Copyright 2019 PT. Jingl Kreasi Indonesia.
+                &copy; Copyright 2019 JINGL.
             </div>
 
 
