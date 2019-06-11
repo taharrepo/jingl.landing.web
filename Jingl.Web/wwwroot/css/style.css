@@ -899,10 +899,10 @@ ul {
 
 #nav > ul > li > a:before {
     content: "";
-    border-bottom: 10px solid #DA2D73;
+    border-bottom: 5px solid #DA2D73;
     display: block;
     width: 0;
-    top: 7px;
+    top: 12px;
     position: absolute;
     z-index: 0;
     left: 0px;
@@ -6380,6 +6380,9 @@ a:hover .text-fx-word p span,
  -------------------------------- */
 @media only screen and (max-width:1240px) {
 
+    .gabung {
+        height: 100vh !important;
+    }
 
     /* Countdown
 	 -------------------------------- */
@@ -7190,6 +7193,8 @@ a:hover .text-fx-word p span,
     .box-image {
         height: 400px !important;
     }
+
+   
 }
 
 .daftarJingl {
@@ -7227,6 +7232,7 @@ a:hover .text-fx-word p span,
 
         .box-image a img {
             object-fit: cover;
+            height: 100%;
         }
 
 .btn-wa {
@@ -7272,4 +7278,9 @@ a:hover .text-fx-word p span,
 
 .grid-jingl {
     transform: translate(0, 80%);
+}
+.gabung {
+    display: flex;
+    align-items: center;
+    height: 65vh;
 }
