@@ -3987,6 +3987,7 @@ body .scrollbar-thumb {
  -------------------------------- */
 .bx-controls {
     width: 100%;
+    margin-bottom: 30px;
 }
 
 .bx-wrapper .bx-pager,
@@ -6516,7 +6517,9 @@ a:hover .text-fx-word p span,
  -------------------------------- */
 @media only screen and (max-width:810px) {
 
-
+    .btn-jingl {
+        width: 50% !important;
+    }
     /* Typography
 	 -------------------------------- */
 
