@@ -2,565 +2,578 @@
 @{
     ViewData["Title"] = "Jingl !!";
 }
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-142088184-1"></script>
+    <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-<!-- ======== Loader ======== -->
-<div id="loading-layer" class="loading-layer show-layer">
-    <div class="ajax-loader">
-        <div class="show-fx trans-10 delay-02">
-            <div class="loader-img skew-fx-loop"><img src="images/Jing_pre.png" alt="Logo"></div>
-        </div>
-        <div class="show-fx trans-10 delay-03">
-            <div class="loader-bar">
-                <span class="progress-bar"></span>
+  gtag('config', 'UA-142088184-1');
+    </script>
+
+</head>
+<body>
+    <!-- ======== Loader ======== -->
+    <div id="loading-layer" class="loading-layer show-layer">
+        <div class="ajax-loader">
+            <div class="show-fx trans-10 delay-02">
+                <div class="loader-img skew-fx-loop"><img src="images/Jing_pre.png" alt="Logo"></div>
+            </div>
+            <div class="show-fx trans-10 delay-03">
+                <div class="loader-bar">
+                    <span class="progress-bar"></span>
+                </div>
             </div>
         </div>
     </div>
-</div>
 
-<!-- ======== Resopnsive Navigation ======== -->
-<div class="responsive-block">
-    <div class="responsive-block-content">
-        <a href="#" class="responsive-block-close"></a>
-        <nav id="responsive-nav">
-            <!-- Responsive nav here -->
-        </nav>
-        <div id="responsive-social">
-            <!-- Responsive Social Icons from header -->
-        </div>
-    </div>
-</div>
-<div class="responsive-block-layer"></div>
-
-<!-- ======== Header ======== -->
-<div id="header" class="hide-navigation">
-
-    <!-- ======== Search ======== -->
-    <div id="search-block">
-        <input type="text" placeholder="Search and hit enter..." name="s" id="search" />
-    </div>
-    <!-- /search -->
-    <!-- ======== Social ======== -->
-    <div id="social-block">
-        <h6 class="social-title trans-10 show-fx">Follow Me</h6>
-
-        <div class="social-icons trans-10 show-fx delay-01">
-
-            <!-- Facebook -->
-            <a href="https://www.facebook.com/Jingl-2053654128052885/" target="_blank" class="circle-btn">
-                <svg class="circle-svg" width="50" height="50" viewBox="0 0 50 50">
-                    <circle class="circle" cx="25" cy="25" r="23" stroke="#fff" stroke-width="1" fill="none"></circle>
-                </svg>
-                <span class="icon icon-facebook"></span>
-            </a>
-
-            <!-- instagram -->
-            <a href="https://www.instagram.com/jingl_id/" target="_blank" class="circle-btn">
-                <svg class="circle-svg" width="50" height="50" viewBox="0 0 50 50">
-                    <circle class="circle" cx="25" cy="25" r="23" stroke="#fff" stroke-width="1" fill="none"></circle>
-                </svg>
-                <span class="icon icon-instagram"></span>
-            </a>
-
-        </div>
-
-    </div>
-    <!-- /share icons -->
-    <!-- ======== Main Navigation ======== -->
-    <div id="main-nav">
-
-        <!-- Navigation container -->
-        <div class="nav-container">
-
-            <!-- ======== Logo ======== -->
-            <a href="#intro" id="logo" class="smooth-scroll skew-fx">
-                <img src="~/images/Jing_e%201.png" alt="Logo" class="logo-light">
-                <img src="~/images/Jing_e%201.png" alt="Logo" class="logo-dark">
-            </a>
-            <!-- /logo -->
-            <!-- ======== Icon navigation ======== -->
-            <nav id="icon-nav">
-                <ul>
-                    <li class="responsive-trigger-wrap">
-                        <a href="#" class="circle-btn responsive-trigger">
-                            <svg class="circle-svg" width="40" height="40" viewBox="0 0 50 50">
-                                <circle class="circle" cx="25" cy="25" r="23" stroke="#fff" stroke-width="1" fill="none"></circle>
-                            </svg>
-                            <span class="icon"></span>
-                        </a>
-                    </li>
-
-                    <!-- <li class="search-trigger-wrap"><a href="#" id="nav-search" class="circle-btn">
-                            <svg class="circle-svg" width="40" height="40" viewBox="0 0 50 50">
-                                <circle class="circle" cx="25" cy="25" r="23" stroke="#fff" stroke-width="1" fill="none"></circle>
-                            </svg>
-                            <span class="pe-7s-search"></span>
-                        </a>
-                    </li> -->
-                    <li class="social-trigger-wrap">
-                        <a href="#" id="nav-social" class="circle-btn">
-                            <svg class="circle-svg" width="40" height="40" viewBox="0 0 50 50">
-                                <circle class="circle" cx="25" cy="25" r="23" stroke="#fff" stroke-width="1" fill="none"></circle>
-                            </svg>
-                            <span class="pe-7s-share"></span>
-                        </a>
-                    </li>
-                </ul>
+    <!-- ======== Resopnsive Navigation ======== -->
+    <div class="responsive-block">
+        <div class="responsive-block-content">
+            <a href="#" class="responsive-block-close"></a>
+            <nav id="responsive-nav">
+                <!-- Responsive nav here -->
             </nav>
-            <!-- /icon navigation -->
-            <!-- ======== Navigation ======== -->
-            <nav id="nav">
-                <ul>
-                    <li class="text-fx-btn rotate-x-360">
-                        <a href="#bio" class="trans-10 text-fx-btn-x">Tentang Jingl</a>
-                    </li>
-                    <li class="text-fx-btn rotate-x-360">
-                        <a href="#music" class="trans-10 text-fx-btn-x">Video Terbaik</a>
-                    </li>
-                    <li class="text-fx-btn rotate-x-360">
-                        <a href="#newsletter" class="trans-10 text-fx-btn-x">Cara Order</a>
-                    </li>
-                    <li class="text-fx-btn rotate-x-360">
-                        <a href="#contact" class="trans-10 text-fx-btn-x">Kontak</a>
-                    </li>
-
-                    <li class="text-fx-btn rotate-x-360">
-                        <a href="#Gabung" class="trans-10 text-fx-btn-x">Gabung Jadi Talent</a>
-                    </li>
-
-                </ul>
-            </nav>
-            <!-- /navigation -->
-
+            <div id="responsive-social">
+                <!-- Responsive Social Icons from header -->
+            </div>
         </div>
-        <!-- /navigation container -->
     </div>
-    <!-- /main navigation -->
-</div>
-<!-- /header -->
-<!-- ======== Site ======== -->
-<div class="site">
+    <div class="responsive-block-layer"></div>
 
-    <!-- ======== intro ======== -->
-    <div id="intro" class="intro intro-01 intro-fullscreen clearfix">
+    <!-- ======== Header ======== -->
+    <div id="header" class="hide-navigation">
 
-        <!-- Image -->
-        <div class="intro-image parallax blur-fx trans-20"><img class="hidden" src="images/giff.gif" alt="Intro-image"></div>
-
-
-        <!-- Text slider -->
-        <div class="text-slider" data-delay="5">
-            <div class="text-slide visible">
-                <h2 class="text-fx jingl">JINGL</h2>
-                <h6 class="text-fx-word">Dapetin video dari Selebriti Favorit kini makin mudah</h6>
-            </div>
-            <div class="text-slide">
-                <h2 class="text-fx jingl">JINGL</h2>
-                <h6 class="text-fx-word"> Yuk download dan pesan video dari Idols kamu sekarang </h6>
-            </div>
+        <!-- ======== Search ======== -->
+        <div id="search-block">
+            <input type="text" placeholder="Search and hit enter..." name="s" id="search" />
         </div>
-        <div class="grid-6 grid-tablet-12 grid-mobile-12 text-center btn-header">
-            <div>
-                <a href="https://play.google.com/store/apps/details?id=xyz.appmaker.uulbcb" class="trans-10 text-fx-btn-x">
-                    <img class="trans-20" src="images/badge-google_play.png" style="width: 30%">
+        <!-- /search -->
+        <!-- ======== Social ======== -->
+        <div id="social-block">
+            <h6 class="social-title trans-10 show-fx">Follow Me</h6>
+
+            <div class="social-icons trans-10 show-fx delay-01">
+
+                <!-- Facebook -->
+                <a href="https://www.facebook.com/Jingl-2053654128052885/" target="_blank" class="circle-btn">
+                    <svg class="circle-svg" width="50" height="50" viewBox="0 0 50 50">
+                        <circle class="circle" cx="25" cy="25" r="23" stroke="#fff" stroke-width="1" fill="none"></circle>
+                    </svg>
+                    <span class="icon icon-facebook"></span>
                 </a>
+
+                <!-- instagram -->
+                <a href="https://www.instagram.com/jingl_id/" target="_blank" class="circle-btn">
+                    <svg class="circle-svg" width="50" height="50" viewBox="0 0 50 50">
+                        <circle class="circle" cx="25" cy="25" r="23" stroke="#fff" stroke-width="1" fill="none"></circle>
+                    </svg>
+                    <span class="icon icon-instagram"></span>
+                </a>
+
             </div>
 
         </div>
+        <!-- /share icons -->
+        <!-- ======== Main Navigation ======== -->
+        <div id="main-nav">
 
+            <!-- Navigation container -->
+            <div class="nav-container">
 
-        <!-- /text slider -->
-        <span class="scroll-discover"><span class="icon icon-line-arrow-left"></span> Scroll to discover</span>
-    </div>
-    <!-- /intro -->
-    <!-- ======== bio ======== -->
-    <div id="bio" class="section">
-
-        <!-- container -->
-        <div class="container section-content bio-text-block">
-            <!-- == content header == -->
-            <header class="content-header">
-                <h2 class="content-title">Tentang Jingl</h2>
-                <span class="back-layer barlow" data-parallax='{"y": -40}'>tentang Jingl</span>
-            </header>
-
-            <div class="grid-row grid-row-pad-xlarge">
-                <div class="grid-6 grid-tablet-6 grid-mobile-12">
-                   <div class="slider-block layers-slider-block">
-                    <ul class="layers-slider trans-20">
-
-                        <!-- Slide 01 -->
-                        <li class="on">
-                            <div class="back-layer">
-                                <img src="~/images/mockup1.png" alt="slide image" class="trans-25" style="width:60%" />
-                            </div>
-                            @*<div class="front-layer" >
-                    <div class="text">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eu felis tellus, sit amet elementum est. Proin posuere turpis lectus, eget vulputate erat. Nunc eget metus in magna vulputate elementum sed ut leo. Mauris at mauris purus, ut laoreet eros.<span class="name">DJ Johny Drama</span></p>
-                    </div>
-                </div>*@
+                <!-- ======== Logo ======== -->
+                <a href="#intro" id="logo" class="smooth-scroll skew-fx">
+                    <img src="~/images/Jing_e%201.png" alt="Logo" class="logo-light">
+                    <img src="~/images/Jing_e%201.png" alt="Logo" class="logo-dark">
+                </a>
+                <!-- /logo -->
+                <!-- ======== Icon navigation ======== -->
+                <nav id="icon-nav">
+                    <ul>
+                        <li class="responsive-trigger-wrap">
+                            <a href="#" class="circle-btn responsive-trigger">
+                                <svg class="circle-svg" width="40" height="40" viewBox="0 0 50 50">
+                                    <circle class="circle" cx="25" cy="25" r="23" stroke="#fff" stroke-width="1" fill="none"></circle>
+                                </svg>
+                                <span class="icon"></span>
+                            </a>
                         </li>
 
-                        <!-- Slide 02 -->
-                        <li>
-                            <div class="back-layer">
-                                <img src="~/images/mockup2.png" alt="slide image" class="trans-25" style="width:60%"/>
-                            </div>
-                            @*<div class="front-layer" >
-                    <div class="text trans-25">
-                        <p>Phasellus ligula sem, laoreet luctus luctus sed, pharetra in mi. Aenean accumsan gravida convallis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vivamus congue tellus lectus, quis sodales sem.<span class="name">Fancy Crew</span></p>
-
-                    </div>
-                </div>*@
+                        <!-- <li class="search-trigger-wrap"><a href="#" id="nav-search" class="circle-btn">
+                                <svg class="circle-svg" width="40" height="40" viewBox="0 0 50 50">
+                                    <circle class="circle" cx="25" cy="25" r="23" stroke="#fff" stroke-width="1" fill="none"></circle>
+                                </svg>
+                                <span class="pe-7s-search"></span>
+                            </a>
+                        </li> -->
+                        <li class="social-trigger-wrap">
+                            <a href="#" id="nav-social" class="circle-btn">
+                                <svg class="circle-svg" width="40" height="40" viewBox="0 0 50 50">
+                                    <circle class="circle" cx="25" cy="25" r="23" stroke="#fff" stroke-width="1" fill="none"></circle>
+                                </svg>
+                                <span class="pe-7s-share"></span>
+                            </a>
                         </li>
                     </ul>
+                </nav>
+                <!-- /icon navigation -->
+                <!-- ======== Navigation ======== -->
+                <nav id="nav">
+                    <ul>
+                        <li class="text-fx-btn rotate-x-360">
+                            <a href="#bio" class="trans-10 text-fx-btn-x">Tentang Jingl</a>
+                        </li>
+                        <li class="text-fx-btn rotate-x-360">
+                            <a href="#music" class="trans-10 text-fx-btn-x">Video Terbaik</a>
+                        </li>
+                        <li class="text-fx-btn rotate-x-360">
+                            <a href="#newsletter" class="trans-10 text-fx-btn-x">Cara Order</a>
+                        </li>
+                        <li class="text-fx-btn rotate-x-360">
+                            <a href="#contact" class="trans-10 text-fx-btn-x">Kontak</a>
+                        </li>
+
+                        <li class="text-fx-btn rotate-x-360">
+                            <a href="#Gabung" class="trans-10 text-fx-btn-x">Gabung Jadi Talent</a>
+                        </li>
+
+                    </ul>
+                </nav>
+                <!-- /navigation -->
+
+            </div>
+            <!-- /navigation container -->
+        </div>
+        <!-- /main navigation -->
+    </div>
+    <!-- /header -->
+    <!-- ======== Site ======== -->
+    <div class="site">
+
+        <!-- ======== intro ======== -->
+        <div id="intro" class="intro intro-01 intro-fullscreen clearfix">
+
+            <!-- Image -->
+            <div class="intro-image parallax blur-fx trans-20"><img class="hidden" src="images/giff.gif" alt="Intro-image"></div>
+
+
+            <!-- Text slider -->
+            <div class="text-slider" data-delay="5">
+                <div class="text-slide visible">
+                    <h2 class="text-fx jingl">JINGL</h2>
+                    <h6 class="text-fx-word">Dapetin video dari Selebriti Favorit kini makin mudah</h6>
                 </div>
-                    @*<img src="~/images/s9 (2).png" alt="Alternate Text" style="width:50%;" />*@
+                <div class="text-slide">
+                    <h2 class="text-fx jingl">JINGL</h2>
+                    <h6 class="text-fx-word"> Yuk download dan pesan video dari Idols kamu sekarang </h6>
+                </div>
+            </div>
+            <div class="grid-6 grid-tablet-12 grid-mobile-12 text-center btn-header">
+                <div>
+                    <a href="https://play.google.com/store/apps/details?id=xyz.appmaker.uulbcb" class="trans-10 text-fx-btn-x">
+                        <img class="trans-20" src="images/badge-google_play.png" style="width: 30%">
+                    </a>
+                </div>
+
+            </div>
+
+
+            <!-- /text slider -->
+            <span class="scroll-discover"><span class="icon icon-line-arrow-left"></span> Scroll to discover</span>
+        </div>
+        <!-- /intro -->
+        <!-- ======== bio ======== -->
+        <div id="bio" class="section">
+
+            <!-- container -->
+            <div class="container section-content bio-text-block">
+                <!-- == content header == -->
+                <header class="content-header">
+                    <h2 class="content-title">Tentang Jingl</h2>
+                    <span class="back-layer barlow" data-parallax='{"y": -40}'>tentang Jingl</span>
+                </header>
+
+                <div class="grid-row grid-row-pad-xlarge">
+                    <div class="grid-6 grid-tablet-6 grid-mobile-12">
+                        <div class="slider-block layers-slider-block">
+                            <ul class="layers-slider trans-20">
+
+                                <!-- Slide 01 -->
+                                <li class="on">
+                                    <div class="back-layer">
+                                        <img src="~/images/mockup1.png" alt="slide image" class="trans-25" style="width:60%" />
+                                    </div>
+                                    @*<div class="front-layer" >
+                                            <div class="text">
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eu felis tellus, sit amet elementum est. Proin posuere turpis lectus, eget vulputate erat. Nunc eget metus in magna vulputate elementum sed ut leo. Mauris at mauris purus, ut laoreet eros.<span class="name">DJ Johny Drama</span></p>
+                                            </div>
+                                        </div>*@
+                                </li>
+
+                                <!-- Slide 02 -->
+                                <li>
+                                    <div class="back-layer">
+                                        <img src="~/images/mockup2.png" alt="slide image" class="trans-25" style="width:60%" />
+                                    </div>
+                                    @*<div class="front-layer" >
+                                            <div class="text trans-25">
+                                                <p>Phasellus ligula sem, laoreet luctus luctus sed, pharetra in mi. Aenean accumsan gravida convallis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vivamus congue tellus lectus, quis sodales sem.<span class="name">Fancy Crew</span></p>
+
+                                            </div>
+                                        </div>*@
+                                </li>
+                            </ul>
+                        </div>
+                        @*<img src="~/images/s9 (2).png" alt="Alternate Text" style="width:50%;" />*@
+                        <div>
+                            <a href="https://play.google.com/store/apps/details?id=xyz.appmaker.uulbcb">
+                                <img src="images/badge-google_play.png" style="width: 30%" class="btn-jingl">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="grid-6 grid-tablet-6 grid-mobile-12">
+                        <p>Punya teman yang terobsesi dengan selebriti dan orang terkenal lainnya? Nah saatnya kamu kasih hadiah paling berkesan buat dia dengan personalized video messages yang langsung direkam sama selebriti.</p>
+                        <blockquote class="block-jingl">
+                            What Is JINGL?
+                        </blockquote>
+                        <p>Jingl adalah platform dimana kamu bisa memesan video langsung ke selebriti atau talent favorit lainnya. Kamu bisa memesan video ucapan untuk kamu sendiri atau teman dan keluarga yang sedang merayakan ulang tahun, kelulusan, pertunangan, atau pernikahan, dll. Misi kami adalah untuk menciptakan pengalaman yang memorable bagi fans. So kamu nggak usah lagi repot ngejar artis untuk mendapatkan video ucapan dari mereka</p>
+
+                        <blockquote class="block-jingl">
+                            Saatnya Berbagi Momen
+                        </blockquote>
+
+                        <ul class="ul-jingl">
+                            <li></li>
+
+                            <li> Di Jingl, kalian bisa terkoneksi dan berbagi momen yang otentik dan memorable. Untuk fans, kamu bisa pesan video sapaan dari selebriti atau talent favorit kamu dengan sangat mudah. Sedangkan untuk talent, kamu bisa dapat banyak fans baru dan mendapatkan tambahan uang lebih. Yay! </li>
+                            <li>Nah, jika sudah mendapat video pesanan dari seleb favorit, segera viralkan di akun sosmed kamu agar semua orang bisa mengalami pengalaman yang sama.</li>
+                        </ul>
+
+                    </div>
+                </div>
+
+
+
+
+
+
+                <div class="grid-12 grid-tablet-12 grid-mobile-12 text-center">
+
+                </div>
+
+            </div>
+            <!-- /container -->
+
+        </div>
+        <!-- /bio -->
+        <!-- ======== Music ======== -->
+        <div id="music" class="section">
+
+            <div class="container music-header section-content full-width">
+                <!-- == content header == -->
+                <header class="content-header">
+                    <h2 class="content-title">Video Terbaik</h2>
+                    <span class="back-layer barlow" data-parallax='{"y": -40}'>video terbaik</span>
+                </header>
+
+            </div>
+
+            <div class="grid-row grid-row-pad-large" videobest>
+                <div class="grid-3 grid-tablet-12 grid-mobile-12">
+
+                    <p>
+                        <a href="~/video/Suci Gavalni.mp4" class="thumb-fade thumb mediabox" title="Image Title">
+                            <!-- Image -->
+                            <div class="box-image">
+                                <img src="~/images/suci.jpg" alt="release cover">
+
+
+                                <!-- Icon -->
+                                <span class="thumb-icon trans-40">
+                                    <svg class="circle-svg" width="80" height="80" viewBox="0 0 50 50">
+                                        <circle class="circle" cx="25" cy="25" r="23" stroke="#fff" stroke-width="1" fill="none"></circle>
+                                    </svg>
+                                    <span class="pe-7s-video"></span>
+                                </span>
+                            </div>
+                        </a>
+                    </p>
+                    <h4 class="text-center h4-jingl">Suci Gavalni, Influencer</h4>
+                    <p class="text-center">Tutorial Makeup.</p>
+                </div>
+                <div class="grid-3 grid-tablet-12 grid-mobile-12">
+                    <p>
+                        <a href="video/video2.mp4" class="thumb-fade thumb mediabox" title="Image Title">
+                            <!-- Image -->
+                            <div class="box-image">
+                                <img src="images/place2.jpeg" alt="release cover">
+
+                                <!-- Icon -->
+                                <span class="thumb-icon trans-40">
+                                    <svg class="circle-svg" width="80" height="80" viewBox="0 0 50 50">
+                                        <circle class="circle" cx="25" cy="25" r="23" stroke="#fff" stroke-width="1" fill="none"></circle>
+                                    </svg>
+                                    <span class="pe-7s-video"></span>
+                                </span>
+                            </div>
+                        </a>
+                    </p>
+                    <h4 class="text-center h4-jingl">Santi Waine, Model</h4>
+                    <p class="text-center">Ucapan 'birthday' termanis</p>
+                </div>
+                <div class="grid-3 grid-tablet-12 grid-mobile-12">
+                    <p>
+                        <a href="video/video3.mp4" class="thumb-fade thumb mediabox" title="Image Title">
+                            <!-- Image -->
+                            <div class="box-image">
+                                <img src="images/place3.jpeg" alt="release cover">
+
+                                <!-- Icon -->
+                                <span class="thumb-icon trans-40">
+                                    <svg class="circle-svg" width="80" height="80" viewBox="0 0 50 50">
+                                        <circle class="circle" cx="25" cy="25" r="23" stroke="#fff" stroke-width="1" fill="none"></circle>
+                                    </svg>
+                                    <span class="pe-7s-video"></span>
+                                </span>
+                            </div>
+                        </a>
+                    </p>
+                    <h4 class="text-center h4-jingl">Putri Marino, Aktris</h4>
+                    <p class="text-center">Nyanyian 'Happy Birthday' buat fans tercinta</p>
+                </div>
+                <div class="grid-3 grid-tablet-12 grid-mobile-12">
+                    <p>
+                        <a href="video/video5.mp4" class="thumb-fade thumb mediabox" title="Image Title">
+                            <!-- Image -->
+                            <div class="box-image">
+                                <img src="images/place5.jpg" alt="release cover">
+
+                                <!-- Icon -->
+                                <span class="thumb-icon trans-40">
+                                    <svg class="circle-svg" width="80" height="80" viewBox="0 0 50 50">
+                                        <circle class="circle" cx="25" cy="25" r="23" stroke="#fff" stroke-width="1" fill="none"></circle>
+                                    </svg>
+                                    <span class="pe-7s-video"></span>
+                                </span>
+                            </div>
+                        </a>
+                    </p>
+                    <h4 class="text-center h4-jingl">Ririn, JinglStar</h4>
+                    <p class="text-center">Serunya ucapan Ultah ala Ririn.</p>
+                </div>
+
+                @*<div class="grid-12 grid-tablet-12 grid-mobile-12 text-center">
+                        <a href="video.html" class="button" value="More Video">More Video</a>
+                    </div>*@
+
+
+            </div>
+
+        </div>
+        <!-- /music -->
+        <!-- ======== Newsletter ======== -->
+        <div id="newsletter" class="newsjingl section">
+            <div class="overlay dots"></div> <!-- overlay layer -->
+            <!-- == section container == -->
+            <div class="container section-content dark-bg clearfix">
+
+                <!-- == content header == -->
+                <header class="content-header">
+                    <h1 class="content-title">Gimana cara pesannya</h1>
+                    <span class="back-layer barlow" data-parallax='{"y": -40}'>Gimana cara pesannya</span>
+                </header>
+                <!-- /content header -->
+
+                <div class="grid-row grid-row-pad-xlarge">
+                    <div class="grid-3 grid-tablet-4 grid-mobile-12">
+                        <div>
+                            <img src="~/images/mockup3.png" alt="Alternate Text" />
+                            <h4 class="">Pertama, pilih talent yang kamu mau.</h4>
+                        </div>
+                    </div>
+                    <div class="grid-3 grid-tablet-4 grid-mobile-12">
+                        <div>
+                            <img src="~/images/mockup4.png" alt="Alternate Text" />
+                            <h4 class="">Kedua, isi form berisi data kamu dan pesan yang ingin disampaikan oleh talent.</h4>
+                        </div>
+                    </div>
+                    <div class="grid-3 grid-tablet-4 grid-mobile-12">
+                        <div>
+                            <img src="~/images/mockup5.png" alt="Alternate Text" />
+                            <h4 class="">Ketiga, selesaikan transaksi kamu</h4>
+                        </div>
+                    </div>
+                    <div class="grid-3 grid-tablet-4 grid-mobile-12">
+                        <div>
+                            <img src="~/images/mockup0.png" alt="Alternate Text" />
+                            <h4 class="">Keempat, Yes! Tinggal tunggu video kamu dikirim.</h4>
+                        </div>
+                    </div>
+
+                </div>
+
+                @*<p class="p-next">Super duper easy. Pertama, pilih talent yang kamu mau. Kedua, isi form berisi data kamu dan pesan yang ingin disampaikan oleh talent. Ketiga, selesaikan transaksi kamu Keempat, silakan duduk, ngopi sambil browsing-browsing manis dan tunggu 3-4 hari video kamu akan dikirim langsung ke apps/email.</p>*@
+
+                <!--
+                                <ul class="ul-jingl jingl-next">
+                                    <li> 1. Video kamu bisa muncul di website Jingl</li>
+                                    <li> 2. Kamu akan mendapat uang tambahan jika ada fans yang memesan video</li>
+                                    <li> 3. Kamu bisa mendapat komisi pemesanan dengan memberikan kode referalmu ke teman, jika mereka mendaftar dan terpilih jadi talent</li>
+                                    <li> </li>
+                                </ul>
+                -->
+                <h3>Tunggu apa lagi? Yuk Download Sekarang Juga!</h3>
+
+                <div class="grid-12 grid-tablet-12 grid-mobile-12 text-center">
                     <div>
                         <a href="https://play.google.com/store/apps/details?id=xyz.appmaker.uulbcb">
-                            <img src="images/badge-google_play.png" style="width: 30%" class="btn-jingl">
+                            <img src="images/badge-google_play.png" style="width: 15%" class="btn-jingl">
                         </a>
                     </div>
                 </div>
-                <div class="grid-6 grid-tablet-6 grid-mobile-12">
-                    <p>Punya teman yang terobsesi dengan selebriti dan orang terkenal lainnya? Nah saatnya kamu kasih hadiah paling berkesan buat dia dengan personalized video messages yang langsung direkam sama selebriti.</p>
-                    <blockquote class="block-jingl">
-                        What Is JINGL?
-                    </blockquote>
-                    <p>Jingl adalah platform dimana kamu bisa memesan video langsung ke selebriti atau talent favorit lainnya. Kamu bisa memesan video ucapan untuk kamu sendiri atau teman dan keluarga yang sedang merayakan ulang tahun, kelulusan, pertunangan, atau pernikahan, dll. Misi kami adalah untuk menciptakan pengalaman yang memorable bagi fans. So kamu nggak usah lagi repot ngejar artis untuk mendapatkan video ucapan dari mereka</p>
 
-                    <blockquote class="block-jingl">
-                        Saatnya Berbagi Momen
-                    </blockquote>
+            </div>
+            <!-- /container -->
+        </div>
+        <!-- /newsletter -->
+        <!-- ======== contact ======== -->
+        <div id="contact" class="section">
 
-                    <ul class="ul-jingl">
-                        <li></li>
-                      
-                        <li> Di Jingl, kalian bisa terkoneksi dan berbagi momen yang otentik dan memorable. Untuk fans, kamu bisa pesan video sapaan dari selebriti atau talent favorit kamu dengan sangat mudah. Sedangkan untuk talent, kamu bisa dapat banyak fans baru dan mendapatkan tambahan uang lebih. Yay! </li>
-                        <li>Nah, jika sudah mendapat video pesanan dari seleb favorit, segera viralkan di akun sosmed kamu agar semua orang bisa mengalami pengalaman yang sama.</li>
-                    </ul>
+
+
+            <!-- == section container == -->
+            <div class="container section-content clearfix">
+
+
+                <header class="content-header">
+                    <h1 class="content-title">kontak</h1>
+                    <span class="back-layer barlow" data-parallax='{"y": -40}'>kontak</span>
+                </header>
+
+                <div class="grid-row grid-row-pad-large">
+
+
+                    <div class="grid-12 grid-mobile-12 grid-tablet-12 col-cf">
+
+                        <h3 class="heading-2">Contact Form</h3>
+
+                        <form action="#" method="" class="contact-form">
+                            <input type="text" name="name" value="" id="contact-name" class="half" placeholder="Full Name" required>
+                            <input type="email" name="email" value="" id="contact-email" class="half last" placeholder="Email Address" required>
+                            <input type="text" name="subject" value="" id="contact-subject" placeholder="Message Subject">
+                            <textarea name="message" id="contact-message" cols="88" rows="6" placeholder="Message" required></textarea>
+                            <div class="hidden">
+                                <label for="contact-spam-check">Do not fill out this field:</label>
+                                <input name="spam-check" type="text" value="" id="contact-spam-check" />
+                            </div>
+
+                            <input type="submit" class="button" value="Send Email">
+                        </form>
+                    </div>
+
+
 
                 </div>
+
             </div>
-
-    
-
-
-
-
-            <div class="grid-12 grid-tablet-12 grid-mobile-12 text-center">
-               
-            </div>
-
-        </div>
-        <!-- /container -->
-
-    </div>
-    <!-- /bio -->
-    <!-- ======== Music ======== -->
-    <div id="music" class="section">
-
-        <div class="container music-header section-content full-width">
-            <!-- == content header == -->
-            <header class="content-header">
-                <h2 class="content-title">Video Terbaik</h2>
-                <span class="back-layer barlow" data-parallax='{"y": -40}'>video terbaik</span>
-            </header>
-
-        </div>
-
-        <div class="grid-row grid-row-pad-large" videobest>
-            <div class="grid-3 grid-tablet-12 grid-mobile-12">
-
-                <p>
-                    <a href="~/video/Suci Gavalni.mp4" class="thumb-fade thumb mediabox" title="Image Title">
-                        <!-- Image -->
-                        <div class="box-image">
-                            <img src="~/images/suci.jpg" alt="release cover">
-
-
-                            <!-- Icon -->
-                            <span class="thumb-icon trans-40">
-                                <svg class="circle-svg" width="80" height="80" viewBox="0 0 50 50">
-                                    <circle class="circle" cx="25" cy="25" r="23" stroke="#fff" stroke-width="1" fill="none"></circle>
-                                </svg>
-                                <span class="pe-7s-video"></span>
-                            </span>
-                        </div>
-                    </a>
-                </p>
-                <h4 class="text-center h4-jingl">Suci Gavalni, Influencer</h4>
-                <p class="text-center">Tutorial Makeup.</p>
-            </div>
-            <div class="grid-3 grid-tablet-12 grid-mobile-12">
-                <p>
-                    <a href="video/video2.mp4" class="thumb-fade thumb mediabox" title="Image Title">
-                        <!-- Image -->
-                        <div class="box-image">
-                            <img src="images/place2.jpeg" alt="release cover">
-
-                            <!-- Icon -->
-                            <span class="thumb-icon trans-40">
-                                <svg class="circle-svg" width="80" height="80" viewBox="0 0 50 50">
-                                    <circle class="circle" cx="25" cy="25" r="23" stroke="#fff" stroke-width="1" fill="none"></circle>
-                                </svg>
-                                <span class="pe-7s-video"></span>
-                            </span>
-                        </div>
-                    </a>
-                </p>
-                <h4 class="text-center h4-jingl">Santi Waine, Model</h4>
-                <p class="text-center">Ucapan 'birthday' termanis</p>
-            </div>
-            <div class="grid-3 grid-tablet-12 grid-mobile-12">
-                <p>
-                    <a href="video/video3.mp4" class="thumb-fade thumb mediabox" title="Image Title">
-                        <!-- Image -->
-                        <div class="box-image">
-                            <img src="images/place3.jpeg" alt="release cover">
-
-                            <!-- Icon -->
-                            <span class="thumb-icon trans-40">
-                                <svg class="circle-svg" width="80" height="80" viewBox="0 0 50 50">
-                                    <circle class="circle" cx="25" cy="25" r="23" stroke="#fff" stroke-width="1" fill="none"></circle>
-                                </svg>
-                                <span class="pe-7s-video"></span>
-                            </span>
-                        </div>
-                    </a>
-                </p>
-                <h4 class="text-center h4-jingl">Putri Marino, Aktris</h4>
-                <p class="text-center">Nyanyian 'Happy Birthday' buat fans tercinta</p>
-            </div>
-            <div class="grid-3 grid-tablet-12 grid-mobile-12">
-                <p>
-                    <a href="video/video5.mp4" class="thumb-fade thumb mediabox" title="Image Title">
-                        <!-- Image -->
-                        <div class="box-image">
-                            <img src="images/place5.jpg" alt="release cover">
-
-                            <!-- Icon -->
-                            <span class="thumb-icon trans-40">
-                                <svg class="circle-svg" width="80" height="80" viewBox="0 0 50 50">
-                                    <circle class="circle" cx="25" cy="25" r="23" stroke="#fff" stroke-width="1" fill="none"></circle>
-                                </svg>
-                                <span class="pe-7s-video"></span>
-                            </span>
-                        </div>
-                    </a>
-                </p>
-                <h4 class="text-center h4-jingl">Ririn, JinglStar</h4>
-                <p class="text-center">Serunya ucapan Ultah ala Ririn.</p>
-            </div>
-
-            @*<div class="grid-12 grid-tablet-12 grid-mobile-12 text-center">
-                <a href="video.html" class="button" value="More Video">More Video</a>
-            </div>*@
 
 
         </div>
+        <!-- /contact -->
+        <!-- ======== bio ======== -->
+        <div id="Gabung" class="section">
 
-    </div>
-    <!-- /music -->
-    <!-- ======== Newsletter ======== -->
-    <div id="newsletter" class="newsjingl section">
-        <div class="overlay dots"></div> <!-- overlay layer -->
-        <!-- == section container == -->
-        <div class="container section-content dark-bg clearfix">
+            <!-- container -->
+            <div class="container section-content ">
+                <!-- == content header == -->
+                <header class="content-header">
+                    <h2 class="content-title">Gabung jadi Talent</h2>
+                    <span class="back-layer barlow" data-parallax='{"y": -40}'>Gabung Jadi Talent </span>
+                </header>
 
-            <!-- == content header == -->
-            <header class="content-header">
-                <h1 class="content-title">Gimana cara pesannya</h1>
-                <span class="back-layer barlow" data-parallax='{"y": -40}'>Gimana cara pesannya</span>
-            </header>
-            <!-- /content header -->
-
-            <div class="grid-row grid-row-pad-xlarge">
-                <div class="grid-3 grid-tablet-4 grid-mobile-12">
-                    <div>
-                        <img src="~/images/mockup3.png" alt="Alternate Text" />
-                        <h4 class="">Pertama, pilih talent yang kamu mau.</h4>
-                    </div>
-                </div>
-                <div class="grid-3 grid-tablet-4 grid-mobile-12">
-                    <div>
-                        <img src="~/images/mockup4.png" alt="Alternate Text" />
-                        <h4 class="">Kedua, isi form berisi data kamu dan pesan yang ingin disampaikan oleh talent.</h4>
-                    </div>
-                </div>
-                <div class="grid-3 grid-tablet-4 grid-mobile-12">
-                    <div>
-                        <img src="~/images/mockup5.png" alt="Alternate Text" />
-                        <h4 class="">Ketiga, selesaikan transaksi kamu</h4>
-                    </div>
-                </div>
-                <div class="grid-3 grid-tablet-4 grid-mobile-12">
-                    <div>
-                        <img src="~/images/mockup0.png" alt="Alternate Text" />
-                        <h4 class="">Keempat, Yes! Tinggal tunggu video kamu dikirim.</h4>
-                    </div>
-                </div>
-
-            </div>
-
-                    @*<p class="p-next">Super duper easy. Pertama, pilih talent yang kamu mau. Kedua, isi form berisi data kamu dan pesan yang ingin disampaikan oleh talent. Ketiga, selesaikan transaksi kamu Keempat, silakan duduk, ngopi sambil browsing-browsing manis dan tunggu 3-4 hari video kamu akan dikirim langsung ke apps/email.</p>*@
-
-                    <!--
-                            <ul class="ul-jingl jingl-next">
-                                <li> 1. Video kamu bisa muncul di website Jingl</li>
-                                <li> 2. Kamu akan mendapat uang tambahan jika ada fans yang memesan video</li>
-                                <li> 3. Kamu bisa mendapat komisi pemesanan dengan memberikan kode referalmu ke teman, jika mereka mendaftar dan terpilih jadi talent</li>
-                                <li> </li>
-                            </ul>
-            -->
-                    <h3>Tunggu apa lagi? Yuk Download Sekarang Juga!</h3>
-
-                    <div class="grid-12 grid-tablet-12 grid-mobile-12 text-center">
+                <div class="grid-row grid-row-pad-xlarge">
+                    <div class="grid-4 grid-tablet-4 grid-mobile-12">
                         <div>
-                            <a href="https://play.google.com/store/apps/details?id=xyz.appmaker.uulbcb">
-                                <img src="images/badge-google_play.png" style="width: 15%" class="btn-jingl">
-                            </a>
+                            <img src="~/images/mockup7.png" alt="Alternate Text" />
+                            <h3 class="">Pertama, Download aplikasi dan 'Daftar' jadi user</h3>
                         </div>
                     </div>
-
-                </div>
-                <!-- /container -->
-            </div>
-            <!-- /newsletter -->
-            <!-- ======== contact ======== -->
-            <div id="contact" class="section">
-
-
-
-                <!-- == section container == -->
-                <div class="container section-content clearfix">
-
-
-                    <header class="content-header">
-                        <h1 class="content-title">kontak</h1>
-                        <span class="back-layer barlow" data-parallax='{"y": -40}'>kontak</span>
-                    </header>
-
-                    <div class="grid-row grid-row-pad-large">
-
-
-                        <div class="grid-12 grid-mobile-12 grid-tablet-12 col-cf">
-
-                            <h3 class="heading-2">Contact Form</h3>
-
-                            <form action="#" method="" class="contact-form">
-                                <input type="text" name="name" value="" id="contact-name" class="half" placeholder="Full Name" required>
-                                <input type="email" name="email" value="" id="contact-email" class="half last" placeholder="Email Address" required>
-                                <input type="text" name="subject" value="" id="contact-subject" placeholder="Message Subject">
-                                <textarea name="message" id="contact-message" cols="88" rows="6" placeholder="Message" required></textarea>
-                                <div class="hidden">
-                                    <label for="contact-spam-check">Do not fill out this field:</label>
-                                    <input name="spam-check" type="text" value="" id="contact-spam-check" />
-                                </div>
-
-                                <input type="submit" class="button" value="Send Email">
-                            </form>
-                        </div>
-
-
-
-                    </div>
-
-                </div>
-
-
-            </div>
-            <!-- /contact -->
-            <!-- ======== bio ======== -->
-            <div id="Gabung" class="section">
-
-                <!-- container -->
-                <div class="container section-content ">
-                    <!-- == content header == -->
-                    <header class="content-header">
-                        <h2 class="content-title">Gabung jadi Talent</h2>
-                        <span class="back-layer barlow" data-parallax='{"y": -40}'>Gabung Jadi Talent </span>
-                    </header>
-
-                    <div class="grid-row grid-row-pad-xlarge">
-                        <div class="grid-4 grid-tablet-4 grid-mobile-12">
-                            <div>
-                                <img src="~/images/mockup7.png" alt="Alternate Text" />
-                                <h3 class="">Pertama, Download aplikasi dan 'Daftar' jadi user</h3>
-                            </div>
-                        </div>
-                        <div class="grid-4 grid-tablet-4 grid-mobile-12">
-                            <div>
-                                <img src="~/images/mockup8.png" alt="Alternate Text" />
-                                <h3 class=""> Kedua Klik 'Profil' lalu temukan icon setting di kanan atas</h3>
-                            </div>
-                        </div>
-                        <div class="grid-4 grid-tablet-4 grid-mobile-12">
-                            <div>
-                                <img src="~/images/mockup6.png" alt="Alternate Text" />
-                                <h3 class="">Ketiga, Klik 'Daftar Sebagai Talent' </h3>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    @*<p>
-
-            Pertama, Download aplikasi dan 'Daftar' jadi user , Kedua Klik 'Profil' lalu temukan icon setting di kanan atas, Ketiga, Klik 'Daftar Sebagai Talent' Ada kesulitan? Langsung saja kontak kami.
-        </p>*@
-
-                   
-
-                    <div class="grid-12 grid-tablet-12 grid-mobile-12 text-center">
+                    <div class="grid-4 grid-tablet-4 grid-mobile-12">
                         <div>
-                            <a href="https://play.google.com/store/apps/details?id=xyz.appmaker.uulbcb">
-                                <img src="images/badge-google_play.png" style="width: 15%" class="btn-jingl">
-                            </a>
+                            <img src="~/images/mockup8.png" alt="Alternate Text" />
+                            <h3 class=""> Kedua Klik 'Profil' lalu temukan icon setting di kanan atas</h3>
+                        </div>
+                    </div>
+                    <div class="grid-4 grid-tablet-4 grid-mobile-12">
+                        <div>
+                            <img src="~/images/mockup6.png" alt="Alternate Text" />
+                            <h3 class="">Ketiga, Klik 'Daftar Sebagai Talent' </h3>
                         </div>
                     </div>
 
                 </div>
-                <!-- /container -->
+
+                @*<p>
+
+                        Pertama, Download aplikasi dan 'Daftar' jadi user , Kedua Klik 'Profil' lalu temukan icon setting di kanan atas, Ketiga, Klik 'Daftar Sebagai Talent' Ada kesulitan? Langsung saja kontak kami.
+                    </p>*@
+
+
+
+                <div class="grid-12 grid-tablet-12 grid-mobile-12 text-center">
+                    <div>
+                        <a href="https://play.google.com/store/apps/details?id=xyz.appmaker.uulbcb">
+                            <img src="images/badge-google_play.png" style="width: 15%" class="btn-jingl">
+                        </a>
+                    </div>
+                </div>
 
             </div>
+            <!-- /container -->
+
+        </div>
 
 
 
 
-            <!-- ======== footer ======== -->
-            <footer id="footer">
-                <!-- container -->
-                <div class="container">
-                    <div id="copyrights">
-                        &copy; Copyright 2019 JINGL.
-                    </div>
+        <!-- ======== footer ======== -->
+        <footer id="footer">
+            <!-- container -->
+            <div class="container">
+                <div id="copyrights">
+                    &copy; Copyright 2019 JINGL.
+                </div>
 
 
 
-                    <div class="social-icons trans-10 text-center delay-01">
+                <div class="social-icons trans-10 text-center delay-01">
 
-                        <!-- Facebook -->
-                        <a href="https://www.facebook.com/Jingl-2053654128052885/" target="_blank" class="circle-btn">
-                            <svg class="circle-svg" width="50" height="50" viewBox="0 0 50 50">
-                                <circle class="circle" cx="25" cy="25" r="23" stroke="#fff" stroke-width="1" fill="none"></circle>
-                            </svg>
-                            <span class="icon icon-facebook"></span>
-                        </a>
+                    <!-- Facebook -->
+                    <a href="https://www.facebook.com/Jingl-2053654128052885/" target="_blank" class="circle-btn">
+                        <svg class="circle-svg" width="50" height="50" viewBox="0 0 50 50">
+                            <circle class="circle" cx="25" cy="25" r="23" stroke="#fff" stroke-width="1" fill="none"></circle>
+                        </svg>
+                        <span class="icon icon-facebook"></span>
+                    </a>
 
-                        <!-- instagram -->
-                        <a href="https://www.instagram.com/jingl_id/" target="_blank" class="circle-btn">
-                            <svg class="circle-svg" width="50" height="50" viewBox="0 0 50 50">
-                                <circle class="circle" cx="25" cy="25" r="23" stroke="#fff" stroke-width="1" fill="none"></circle>
-                            </svg>
-                            <span class="icon icon-instagram"></span>
-                        </a>
-
-                    </div>
-
-
+                    <!-- instagram -->
+                    <a href="https://www.instagram.com/jingl_id/" target="_blank" class="circle-btn">
+                        <svg class="circle-svg" width="50" height="50" viewBox="0 0 50 50">
+                            <circle class="circle" cx="25" cy="25" r="23" stroke="#fff" stroke-width="1" fill="none"></circle>
+                        </svg>
+                        <span class="icon icon-instagram"></span>
+                    </a>
 
                 </div>
-                <!-- /container -->
-            </footer>
-            <!-- /footer -->
-        </div>
+
+
+
+            </div>
+            <!-- /container -->
+        </footer>
+        <!-- /footer -->
+    </div>
+</body>
 <!-- /site -->
