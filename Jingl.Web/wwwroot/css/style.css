@@ -7204,6 +7204,13 @@ a:hover .text-fx-word p span,
    
 }
 
+@media only screen and (min-width:1075px) and (max-width:1077px)
+{
+    .btn-qrcode .qrcode {
+        width: 25% !important;
+    }
+}
+
 .daftarJingl {
     text-align: center;
 }
