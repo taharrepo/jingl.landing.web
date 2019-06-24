@@ -6304,6 +6304,17 @@ a:hover .text-fx-word p span,
     }
 }
 
+@media only screen and (max-width:1014px) and (min-width:676px) {
+
+    .btn-qrcode {
+        top: 67% !important;
+    }
+
+        .btn-qrcode img {
+            width: 24% !important;
+        }
+}
+
 /* Small Desktop Devices [ 960px ] */
 @media only screen and (max-width:1240px) {
 
