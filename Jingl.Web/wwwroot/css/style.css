@@ -7204,8 +7204,12 @@ a:hover .text-fx-word p span,
    
 }
 
-@media only screen and (min-width:1075px) and (max-width:1077px)
+@media only screen and (min-width:1075px) and (max-width:1367px)
 {
+    .btn-header {
+        top: 73% !important;
+    }
+
     .btn-qrcode .qrcode {
         width: 25% !important;
     }
