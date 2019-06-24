@@ -6295,6 +6295,13 @@ a:hover .text-fx-word p span,
     .apc .container {
         width: 100%;
     }
+
+    .btn-qrcode {
+        top: 67% !important;
+    }
+    .btn-qrcode img{
+        width: 30% !important;
+    }
 }
 
 /* Small Desktop Devices [ 960px ] */
