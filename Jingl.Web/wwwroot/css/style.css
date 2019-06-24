@@ -6296,24 +6296,9 @@ a:hover .text-fx-word p span,
         width: 100%;
     }
 
-    .btn-qrcode {
-        top: 67% !important;
-    }
-    .btn-qrcode img{
-        width: 30% !important;
-    }
 }
 
-@media only screen and (max-width:1014px) and (min-width:676px) {
 
-    .btn-qrcode {
-        top: 67% !important;
-    }
-
-        .btn-qrcode img {
-            width: 24% !important;
-        }
-}
 
 /* Small Desktop Devices [ 960px ] */
 @media only screen and (max-width:1240px) {
@@ -7215,12 +7200,6 @@ a:hover .text-fx-word p span,
         height: 400px !important;
     }
 
-    .btn-qrcode {
-        top: 68% !important;
-    }
-    .btn-header {
-        top: 85% !important;
-    }
 
    
 }
@@ -7291,7 +7270,7 @@ a:hover .text-fx-word p span,
 
 .btn-header {
     position: absolute;
-    top: 82%;
+    top: 70%;
     transform: translate(-50%, -50%);
     left: 50%;
     margin: 0 auto;
@@ -7300,16 +7279,13 @@ a:hover .text-fx-word p span,
     text-align: center;
 }
 .btn-qrcode {
-    position: absolute;
-    top: 66%;
-    transform: translate(-50%, -50%);
-    left: 50%;
-    margin: 0 auto;
-    z-index: 22;
-    max-width: 500px;
-    text-align: center;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
 }
-
+.btn-qrcode img {
+    margin-top: 15px;
+}
 .row-jingl {
     position: relative;
 }
