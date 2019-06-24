@@ -4435,7 +4435,7 @@ body .scrollbar-thumb {
  ------------------------------------ */
 .text-slider {
     position: absolute;
-    top: 50%;
+    top: 45%;
     transform: translate(-50%, -50%);
     left: 50%;
     margin: 0 auto;
@@ -7197,6 +7197,13 @@ a:hover .text-fx-word p span,
         height: 400px !important;
     }
 
+    .btn-qrcode {
+        top: 68% !important;
+    }
+    .btn-header {
+        top: 85% !important;
+    }
+
    
 }
 
@@ -7266,7 +7273,17 @@ a:hover .text-fx-word p span,
 
 .btn-header {
     position: absolute;
-    top: 70%;
+    top: 82%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    margin: 0 auto;
+    z-index: 22;
+    max-width: 500px;
+    text-align: center;
+}
+.btn-qrcode {
+    position: absolute;
+    top: 66%;
     transform: translate(-50%, -50%);
     left: 50%;
     margin: 0 auto;
