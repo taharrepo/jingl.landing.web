@@ -9,6 +9,9 @@ using Microsoft.AspNetCore.Http;
 using System.IO;
 using Microsoft.AspNetCore.Routing;
 using static Jingl.Web.Logic.Helper;
+using System.Data;
+using System.Data.SqlClient;
+using Dapper;
 
 namespace Jingl.Web.Controllers
 {
@@ -21,6 +24,17 @@ namespace Jingl.Web.Controllers
         {
             _context = context;
         }
+
+        public IDbConnection Connection
+        {
+            get
+            {
+                return new SqlConnection("Server=tcp:jinglprod.database.windows.net,1433;Initial Catalog=JINGPROD;Persist Security Info=False;User ID=jinglprod;Password=SophieHappy33;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=3600;");
+            }
+        }
+
+
+
         public IActionResult Index(string reff, string message)
         {
             if (reff != null)
@@ -439,5 +453,34 @@ namespace Jingl.Web.Controllers
         //{
         //    return View(new ErrorViewModel { RequestId = System.Diagnostics.Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         //}
+
+        [HttpPost]
+        public IActionResult Support(SupportModel model)
+        {
+            try
+            {
+
+                using (IDbConnection conn = Connection)
+                {
+                    var param = new DynamicParameters();
+                    param.Add("@Details", model.Details);
+                    param.Add("@Subject", model.Subject);
+                    param.Add("@EmailAddress", model.EmailAddress);
+                    param.Add("@Status", 1);
+                    param.Add("@CreatedBy", model.CreatedBy);
+                    param.Add("@CreatedDate", DateTime.Now);
+                    param.Add("@IsActive", 1);
+
+                    model = conn.Query<SupportModel>("sp_Tbl_Trx_SupportInsert", param,
+                               commandType: CommandType.StoredProcedure).FirstOrDefault();
+                }
+                return Json("OK");
+            }
+            catch (Exception ex)
+            {
+                return Json("Error");
+                throw ex;
+            }
+        }
     }
 }

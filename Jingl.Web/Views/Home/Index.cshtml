@@ -1,19 +1,20 @@
 ﻿
 @{
     ViewData["Title"] = "Jingl !!";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     @*<script async src="https://www.googletagmanager.com/gtag/js?id=UA-142088184-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
 
-        gtag('config', 'UA-142088184-1');
-    </script>
+            gtag('config', 'UA-142088184-1');
+        </script>
 
-    <meta name="google-site-verification" content="vf9izf7lb7Lfvpk9oyfRAhacBDFw_FHElPXp19RYHHo" />*@
+        <meta name="google-site-verification" content="vf9izf7lb7Lfvpk9oyfRAhacBDFw_FHElPXp19RYHHo" />*@
 
 </head>
 <body>
@@ -125,25 +126,25 @@
                 <nav id="nav">
                     <ul>
 
-                        <li class="text-fx-btn rotate-x-360">
-                            <a href="http://jinglblog.site/" target="_blank" class="trans-10 text-fx-btn-x" style="font-size:larger">Jinglstar Audition</a>
-                        </li>
+                        @*<li class="text-fx-btn rotate-x-360">
+                                <a href="http://jinglblog.site/" target="_blank" class="trans-10 text-fx-btn-x" style="font-size:larger; font-weight: bolder;">Jinglstar Audition</a>
+                            </li>*@
                         <li class="text-fx-btn rotate-x-360">
                             <a href="#bio" class="trans-10 text-fx-btn-x">Tentang Jingl</a>
                         </li>
                         <li class="text-fx-btn rotate-x-360">
                             <a href="#music" class="trans-10 text-fx-btn-x">Video Terbaik</a>
                         </li>
-                        <li class="text-fx-btn rotate-x-360">
-                            <a href="#newsletter" class="trans-10 text-fx-btn-x">Cara Order</a>
-                        </li>
+                        @*<li class="text-fx-btn rotate-x-360">
+                                <a href="#newsletter" class="trans-10 text-fx-btn-x">Cara Order</a>
+                            </li>*@
                         <li class="text-fx-btn rotate-x-360">
                             <a href="#contact" class="trans-10 text-fx-btn-x">Kontak</a>
                         </li>
 
-                        <li class="text-fx-btn rotate-x-360">
-                            <a href="#Gabung" class="trans-10 text-fx-btn-x">Gabung Jadi Talent</a>
-                        </li>
+                        @*<li class="text-fx-btn rotate-x-360">
+                                <a href="#Gabung" class="trans-10 text-fx-btn-x">Gabung Jadi Talent</a>
+                            </li>*@
 
 
 
@@ -179,23 +180,30 @@
                     <h6 class="text-fx-word"> Yuk download dan pesan video dari Idols kamu sekarang </h6>
                 </div>
             </div>
-            @*<div class="grid-6 grid-tablet-12 grid-mobile-12 text-center btn-qrcode">
-                <div>
-                    <a href="https://play.google.com/store/apps/details?id=xyz.appmaker.uulbcb" class="trans-10 text-fx-btn-x">
-                        <img class="trans-20" src="~/images/qrcode.52306246.png" style="width:40%">
-                    </a>
-                </div>
-
-            </div>*@
             <div class="grid-6 grid-tablet-12 grid-mobile-12 text-center btn-header">
                 <div class="btn-qrcode">
-                    <a href="https://play.google.com/store/apps/details?id=xyz.appmaker.uulbcb" class="trans-10 text-fx-btn-x">
-                        <img class="trans-20" src="images/badge-google_play.png" style="width: 30%">
-                    </a>
-                    <img class="trans-20 qrcode" src="~/images/qrcode.52306246.png" style="width:30%">
+                    <input type="submit" class="button" data-toggle="modal" data-target="#Gabung" id="regis" value="Join Jadi Talent">
                 </div>
-
+                
             </div>
+
+            @*<div class="grid-6 grid-tablet-12 grid-mobile-12 text-center btn-qrcode">
+                    <div>
+                        <a href="https://play.google.com/store/apps/details?id=xyz.appmaker.uulbcb" class="trans-10 text-fx-btn-x">
+                            <img class="trans-20" src="~/images/qrcode.52306246.png" style="width:40%">
+                        </a>
+                    </div>
+
+                </div>*@
+            @*<div class="grid-6 grid-tablet-12 grid-mobile-12 text-center btn-header">
+                    <div class="btn-qrcode">
+                        <a href="https://play.google.com/store/apps/details?id=xyz.appmaker.uulbcb" class="trans-10 text-fx-btn-x">
+                            <img class="trans-20" src="images/badge-google_play.png" style="width: 30%">
+                        </a>
+                        <img class="trans-20 qrcode" src="~/images/qrcode.52306246.png" style="width:30%">
+                    </div>
+
+                </div>*@
 
 
             <!-- /text slider -->
@@ -214,7 +222,7 @@
                 </header>
 
                 <div class="grid-row grid-row-pad-xlarge">
-                    <div class="grid-6 grid-tablet-6 grid-mobile-12">
+                    <div class="grid-6 grid-tablet-6 grid-mobile-12" style="display:none">
                         <div class="slider-block layers-slider-block">
                             <ul class="layers-slider trans-20">
 
@@ -251,7 +259,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="grid-6 grid-tablet-6 grid-mobile-12">
+                    <div class="grid-6 grid-tablet-6 grid-mobile-12  text-center">
                         <p>Punya teman yang terobsesi dengan selebriti dan orang terkenal lainnya? Nah saatnya kamu kasih hadiah paling berkesan buat dia dengan personalized video messages yang langsung direkam sama selebriti.</p>
                         <blockquote class="block-jingl">
                             What Is JINGL?
@@ -271,10 +279,6 @@
 
                     </div>
                 </div>
-
-
-
-
 
 
                 <div class="grid-12 grid-tablet-12 grid-mobile-12 text-center">
@@ -392,7 +396,7 @@
         </div>
         <!-- /music -->
         <!-- ======== Newsletter ======== -->
-        <div id="newsletter" class="newsjingl section">
+        <div id="newsletter" class="newsjingl section" style="display:none">
             <div class="overlay dots"></div> <!-- overlay layer -->
             <!-- == section container == -->
             <div class="container section-content dark-bg clearfix">
@@ -458,11 +462,8 @@
         <!-- /newsletter -->
         <!-- ======== contact ======== -->
         <div id="contact" class="section">
-
-
-
-            <!-- == section container == -->
-            <div class="container section-content clearfix">
+        <!-- == section container == -->
+         <div class="container section-content clearfix">
 
 
                 <header class="content-header">
@@ -477,7 +478,7 @@
 
                         <h3 class="heading-2">Contact Form</h3>
 
-                        <form action="#" method="" class="contact-form">
+                        <form id="formContact" class="contact-form">
                             <input type="text" name="name" value="" id="contact-name" class="half" placeholder="Full Name" required>
                             <input type="email" name="email" value="" id="contact-email" class="half last" placeholder="Email Address" required>
                             <input type="text" name="subject" value="" id="contact-subject" placeholder="Message Subject">
@@ -496,15 +497,13 @@
                 </div>
 
             </div>
-
-
         </div>
         <!-- /contact -->
         <!-- ======== bio ======== -->
         <div id="Gabung" class="section">
 
             <!-- container -->
-            <div class="container section-content ">
+            <div class="container section-content " style="display:none">
                 <!-- == content header == -->
                 <header class="content-header">
                     <h2 class="content-title">Gabung jadi Talent</h2>
@@ -535,8 +534,8 @@
 
                 @*<p>
 
-                        Pertama, Download aplikasi dan 'Daftar' jadi user , Kedua Klik 'Profil' lalu temukan icon setting di kanan atas, Ketiga, Klik 'Daftar Sebagai Talent' Ada kesulitan? Langsung saja kontak kami.
-                    </p>*@
+                Pertama, Download aplikasi dan 'Daftar' jadi user , Kedua Klik 'Profil' lalu temukan icon setting di kanan atas, Ketiga, Klik 'Daftar Sebagai Talent' Ada kesulitan? Langsung saja kontak kami.
+            </p>*@
 
 
 
@@ -551,11 +550,11 @@
             </div>
             <!-- /container -->
 
+           
+
+
         </div>
-
-
-
-
+                     
         <!-- ======== footer ======== -->
         <footer id="footer">
             <!-- container -->
@@ -593,5 +592,58 @@
         </footer>
         <!-- /footer -->
     </div>
+    
+
 </body>
 <!-- /site -->
+
+@section scripts {
+       <script type="text/javascript">
+            $(document).ready(function () {
+                $('#formContact').submit(function (e) {
+                    e.preventDefault();
+
+                    var supportSubject = $("#contact-subject").val();
+                    var supportDetail = $("#contact-message").val();
+                    var supportEmail = $("#contact-email").val();
+                    var supportName = $("#contact-name").val();
+
+                    var url = "@Url.Action("Support","Account")";
+                    var jsonRequest = {
+                        Subject: supportSubject,
+                        Details : supportDetail,
+                        EmailAddress: supportEmail,
+                        UserName: supportName
+                    };
+
+                    $.ajax({
+                    url: url,
+                    //cache: false,
+                    //traditional: true,
+                    type: "POST",
+                    data: { model: jsonRequest},
+                    //contentType: "application/json; charset=utf-8",
+                    //async: false,
+                    beforeSend:
+                        function () {
+                            //$("#spinner").show();
+                        },
+                    success: function (data) {
+
+                        if (data == "OK") {
+                            window.location.href = "@Url.Action("Index","Home")";
+                        }
+
+                        else {
+
+                        }
+                    },
+                    error: function (jqXHR, textStatus, errorMessage) {
+                        console.log(errorMessage);
+                    }
+                });
+                })
+            })
+
+    </script>
+}
